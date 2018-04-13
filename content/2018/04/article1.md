@@ -20,6 +20,16 @@ of the frequent choices UI designers have to make project by project: which sche
 Factors Influencing the Choice of Color Scheme
 Be sure, there is no one particular choice which would work for all the aims. The solution heavily depends on numerous factors covering not only user’s side but also business goals, market conditions, and current design trends. Let’s review the essential factors which have to be considered regarding the issue.
 
+* Unordered list can use asterisks
+* Unordered list can use asterisks
+* Unordered list can use asterisks
+
+1. Unordered list can use asterisks
+2. Unordered list can use asterisks
+3. Unordered list can use asterisks
+
+> asdas dsadsad asdasdsa dsads asda sdsadsadasd asdsadsads asdasdsad sada sdasdsadsads asdasdsads adasdasd sadsads asdasd sadsada sdasdsadsads ?
+
 Readability and legibility
 These terms are both directly connected to the perception of content presented with text. Readability defines how easily people can read words, phrases, and blocks of copy. Legibility measures how quickly and intuitively users can distinguish the letters in a particular typeface.
 
