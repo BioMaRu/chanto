@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webdesign on Chanto</title>
+    <link>http://chanto.io/categories/webdesign/</link>
+    <description>Recent content in Webdesign on Chanto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://chanto.io/categories/webdesign/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Light or Dark UI? Tips to Choose a Proper Color Scheme for User Inteerface</title>
+      <link>http://chanto.io/2018/04/hello-world/</link>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://chanto.io/2018/04/hello-world/</guid>
+      <description>Our everyday life is an endless flow of choices. In both personal and professional life, we have to consider numerous oppositions and challenges, and it’s better when solutions are based on not only suggestions but also facts, experience and knowledge. Today we are going to discuss one of the frequent choices UI designers have to make project by project: which scheme is better for the interface, light or dark?</description>
+    </item>
+    
+    <item>
+      <title>This is my birth day</title>
+      <link>http://chanto.io/2018/04/my-birth-day/</link>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://chanto.io/2018/04/my-birth-day/</guid>
+      <description>article4</description>
+    </item>
+    
+    <item>
+      <title>This is my birth day</title>
+      <link>http://chanto.io/2018/04/my-birth-day/</link>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://chanto.io/2018/04/my-birth-day/</guid>
+      <description>article4</description>
+    </item>
+    
+    <item>
+      <title>This is my birth day</title>
+      <link>http://chanto.io/2018/04/my-birth-day/</link>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://chanto.io/2018/04/my-birth-day/</guid>
+      <description>article4</description>
+    </item>
+    
+  </channel>
+</rss>

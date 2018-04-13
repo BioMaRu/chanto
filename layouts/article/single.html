@@ -1,0 +1,71 @@
+{{define "content"}}
+<style>
+  .text-container {
+    width: 100%;
+    max-width: 800px;
+  }
+  article h1, article h2, article h3, article h4, article h5, article h6 {
+    margin-top: 48px
+  }
+  article img + p {
+    margin-top: 48px;
+  }
+  article p {
+    margin-top: 28px;
+  }
+  article h1 + p,
+  article h2 + p,
+  article h3 + p,
+  article h4 + p,
+  article h5 + p,
+  article h5 + p {
+    margin-top: 8px;
+  }
+
+  article img {
+    width: 100%;
+  }
+  article img + em {
+    margin-top: 4px;
+    opacity: 0.6;
+    width: 100%;
+    display: block;
+    font-size: 0.86rem;
+    text-align: center;
+  }
+  article a {
+
+  }
+</style>
+
+{{partial "navbar/navbar.compact.html" .}}
+<section class="lo-container _jtfit-ct _pdv-48px">
+
+  <div class="text-container _w-100pct _dp-f _jtfct-spbtw">
+    <div>
+      <a href="#" class="bio-link -positive -fancy">
+        <strong>
+          {{.Params.label}}
+        </strong>
+      </a>
+      <span class="_opct-60">
+        – {{ .Date.Format "2 Jan 2006" }}
+      </span>
+    </div>
+  </div>
+
+  <h1 class="text-container _ffml-secondary _fs-2 _cl-black _mgt-24px">{{ .Title }}</h1>
+
+  <img
+    src="{{.Params.coverImgUrl}}"
+    alt="Cover Image"
+    class="_w-100pct _mgt-32px _ojf-cv"
+    style="max-width: 1000px; max-height: 400px;">
+
+  <article class="text-container _fs-5 _mgt-24px _cl-black">
+    {{ .Content }}
+  </article>
+
+</section>
+{{partial "footer/footer.html" .}}
+{{end}}

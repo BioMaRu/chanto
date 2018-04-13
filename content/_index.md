@@ -1,6 +1,6 @@
 ---
-title: Home
-slug: "home"
-layout: "home"
+title: chanto.io
+siteTitle: "chanto.io – Done Neatly"
+type: "home"
 ---
-Hello
+Home Contents

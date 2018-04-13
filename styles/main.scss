@@ -1,0 +1,15 @@
+@import 'biomatic/src/reset';
+@import 'config';
+@import 'biomatic/src/mixins/mixins';
+
+@import 'biomatic/src/layouts/layout';
+@import 'biomatic/src/components/component';
+@import 'biomatic/src/utilities/utilities';
+@import 'biomatic/src/atomic/atomic';
+
+@import 'addon';
+
+:root {
+  --navbar-height: 60px;
+  --footer-height: 80px;
+}

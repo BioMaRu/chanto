@@ -1,0 +1,33 @@
+<div>
+    <a href="{{.Permalink}}">
+      <img
+        src="{{.Params.coverImgUrl}}"
+        class="_ojf-cv _w-100pct _h-196px _ojf-cv"
+        draggable="false">
+    </a>
+    <div class="_pdv-16px lo-12 -gap-12px">
+      <div class="_dp-f _jtfct-spbtw _fs-7">
+        <a href="#">
+          <strong class="_cl-positive">
+            {{.Params.label}}
+          </strong>
+        </a>
+        <div class="_opct-60">
+          {{dateFormat "2 Jan 2006" .Params.publishdate}}
+        </div>
+      </div>
+      <a href="{{.Permalink}}" class="bio-link -dark">
+        <h4 class="_ffml-secondary _mgt-8px">
+          {{.Params.title}}
+        </h4>
+      </a>
+      <a href="{{.Permalink}}" class="bio-link -dark">
+        <p class="_fs-6">
+          {{.Params.description}}
+        </p>
+      </a>
+      <small class="_opct-60">
+        {{.Params.minRead}} min read
+      </small>
+    </div>
+  </div>
