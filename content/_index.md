@@ -1,6 +1,6 @@
 ---
 title: chanto.io
-siteTitle: "chanto.io – Done Neatly"
+pageTitle: "chanto.io – Done Neatly"
 type: "home"
 ---
 Home Contents

@@ -7,11 +7,13 @@
     </a>
     <div class="_pdv-16px lo-12 -gap-12px">
       <div class="_dp-f _jtfct-spbtw _fs-7">
-        <a href="#">
-          <strong class="_cl-positive">
-            {{.Params.label}}
+        {{ range .Params.categories }}
+        <a href="{{ "/c/" | relLangURL }}{{ . | urlize }}">
+          <strong class="_cl-positive _ttf-upc">
+            {{.}}
           </strong>
         </a>
+        {{ end }}
         <div class="_opct-60">
           {{dateFormat "2 Jan 2006" .Params.publishdate}}
         </div>

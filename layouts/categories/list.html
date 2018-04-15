@@ -1,13 +1,14 @@
 {{define "content"}}
-{{partial "navbar/navbar.html" .}}
 <div>
   <div class="_pdv-32px">
     <div class="lo-container">
       <div class="lo-12 -gap-32px">
         <div>
-          <p class="_fs-4 _bdbtw-1px _pdbt-8px _bdcl-neutral-300 _cl-black _mgbt-24px">Latest</p>
+          <p class="_fs-4 _bdbtw-1px _pdbt-8px _bdcl-neutral-300 _cl-black _mgbt-24px">
+            {{.Data.Term}}
+          </p>
           <div class="lo-12 lo-6-sm lo-4-md -gap-32px _w-100pct">
-            {{range $i, $post := first 5 .Data.Pages.ByPublishDate}}
+            {{range $i, $post := .Data.Pages.ByPublishDate}}
               {{partial "components/card-post.html" $post}}
             {{end}}
           </div>
@@ -16,5 +17,4 @@
     </div>
   </div>
 </div>
-{{partial "footer/footer.html" .}}
 {{end}}

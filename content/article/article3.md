@@ -1,15 +1,20 @@
 ---
 title: "Light or Dark UI? Tips to Choose a Proper Color Scheme for User Inteerface"
 description: "Our everyday life is an endless flow of choices. In both personal and professional life, we have to consider numerous oppositions and…"
-slug: "hello-world"
-siteTitle: "Light or Dark UI? Tips to Choose a Proper Color Scheme for User Inteerface | chanto.io"
+pageTitle: "Light or Dark UI? Tips to Choose a Proper Color Scheme for User Inteerface | chanto.io"
 thumbnailImgUrl: "https://cdn-images-1.medium.com/max/400/0*bT2SROVqeK_i3wSk.png"
 coverImgUrl: "https://cdn-images-1.medium.com/max/1000/1*odG2LJMa7L_5FnRm73w8NA.png"
 date: "2018-03-22"
-label: "WEB DESIGN"
-categories: ["webdesign"]
-tag: ["webdesign"]
+
+# Taxonomies
+categories: ["coding"]
+tags: ["ux", "ui"]
+
+# Params
 minRead: "10"
+label: "design"
+
+# For template selection
 type: "article"
 ---
 
