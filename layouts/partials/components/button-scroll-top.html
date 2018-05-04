@@ -1,0 +1,21 @@
+<div class="js-scroll-top-button _dp-n _dp-f-sm _alit-ct _jtfct-ct _cl-white _pst-f _bfvsblt-hd _zid-1 _w-48px _h-48px _bgcl-primary-300 _bgcl-primary-400-hover _r-12px _bt-12px _bdrd-4px _cs-pt _opct-80 u-rise">
+  <i class="far fa-chevron-up _fs-4"></i>
+</div>
+
+<script>
+  let intervalId = 0
+  const scrollButtonElem = document.querySelector('.js-scroll-top-button')
+
+  function scrollStep() {
+    if (window.pageYOffset === 0) {
+      clearInterval(intervalId)
+    }
+    window.scroll(0, window.pageYOffset - 128)
+  }
+
+  function scrollToTop() {
+    intervalId = setInterval(scrollStep, 16.66)
+  }
+
+  scrollButtonElem.addEventListener('click', scrollToTop)
+</script>

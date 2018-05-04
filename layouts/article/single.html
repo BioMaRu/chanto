@@ -4,15 +4,19 @@
     width: 100%;
     max-width: 800px;
   }
+
   article h1, article h2, article h3, article h4, article h5, article h6 {
     margin-top: 48px
   }
+
   article img + p {
     margin-top: 48px;
   }
+
   article p {
     margin-top: 28px;
   }
+
   article h1 + p,
   article h2 + p,
   article h3 + p,
@@ -25,6 +29,7 @@
   article img {
     width: 100%;
   }
+
   article img + em {
     margin-top: 4px;
     opacity: 0.6;
@@ -33,17 +38,20 @@
     font-size: 0.86rem;
     text-align: center;
   }
+
   article ul {
     list-style: disc;
     padding-left: 30px;
     margin-top: 28px;
     margin-bottom: 0px;
   }
+
   article ol {
     margin-top: 28px;
     margin-bottom: 0px;
     padding-left: 30px;
   }
+
   article ul li,
   article ol li {
     line-height: 1.65;
@@ -56,16 +64,17 @@
   }
 </style>
 
-{{partial "navbar/navbar.compact.html" .}}
 <section class="lo-container _jtfit-ct _pdv-48px">
 
   <div class="text-container _w-100pct _dp-f _jtfct-spbtw">
     <div>
-      <a href="#" class="bio-link -positive -fancy">
-        <strong>
-          {{.Params.label}}
+      {{ range .Params.categories }}
+      <a href="{{ "/c/" | relLangURL }}{{ . | urlize }}">
+        <strong class="_cl-positive _ttf-upc">
+          {{.}}
         </strong>
       </a>
+      {{ end }}
       <span class="_opct-60">
         – {{ .Date.Format "2 Jan 2006" }}
       </span>
@@ -85,5 +94,5 @@
   </article>
 
 </section>
-{{partial "footer/footer.html" .}}
+{{partial "components/button-scroll-top.html"}}
 {{end}}

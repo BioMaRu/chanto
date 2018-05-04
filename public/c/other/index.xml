@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>chanto.io on Chanto</title>
-    <link>http://chanto.io/</link>
-    <description>Recent content in chanto.io on Chanto</description>
+    <title>Other on Chanto</title>
+    <link>http://chanto.io/c/other/</link>
+    <description>Recent content in Other on Chanto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://chanto.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://chanto.io/c/other/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

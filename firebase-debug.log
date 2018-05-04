@@ -1,0 +1,82 @@
+[debug] [2018-04-16T20:11:08.997Z] ----------------------------------------------------------------------
+[debug] [2018-04-16T20:11:09.000Z] Command:       /Users/speedstars/.nvm/versions/node/v7.9.0/bin/node /Users/speedstars/.nvm/versions/node/v7.9.0/bin/firebase deploy
+[debug] [2018-04-16T20:11:09.001Z] CLI Version:   3.17.6
+[debug] [2018-04-16T20:11:09.001Z] Platform:      darwin
+[debug] [2018-04-16T20:11:09.001Z] Node Version:  v7.9.0
+[debug] [2018-04-16T20:11:09.002Z] Time:          Tue Apr 17 2018 03:11:09 GMT+0700 (+07)
+[debug] [2018-04-16T20:11:09.002Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-16T20:11:09.022Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-16T20:11:09.022Z] > authorizing via signed-in user
+[debug] [2018-04-16T20:11:09.024Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-16T20:11:09.024Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/XULED7HompCe11DLs9059f8MgTuCgJ-insKh2Gf3Ios',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Apr 17 2018 03:11:09 GMT+0700 (+07)
+[debug] [2018-04-16T20:11:21.190Z] ----------------------------------------------------------------------
+[debug] [2018-04-16T20:11:21.193Z] Command:       /Users/speedstars/.nvm/versions/node/v7.9.0/bin/node /Users/speedstars/.nvm/versions/node/v7.9.0/bin/firebase deploy
+[debug] [2018-04-16T20:11:21.194Z] CLI Version:   3.17.6
+[debug] [2018-04-16T20:11:21.194Z] Platform:      darwin
+[debug] [2018-04-16T20:11:21.194Z] Node Version:  v7.9.0
+[debug] [2018-04-16T20:11:21.195Z] Time:          Tue Apr 17 2018 03:11:21 GMT+0700 (+07)
+[debug] [2018-04-16T20:11:21.195Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-16T20:11:21.217Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-16T20:11:21.217Z] > authorizing via signed-in user
+[debug] [2018-04-16T20:11:21.221Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-16T20:11:21.222Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/XULED7HompCe11DLs9059f8MgTuCgJ-insKh2Gf3Ios',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Apr 17 2018 03:11:21 GMT+0700 (+07)
+[debug] [2018-04-16T20:11:21.976Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-16T20:11:21.985Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/chanto-web  
+  
+ Tue Apr 17 2018 03:11:21 GMT+0700 (+07)
+[debug] [2018-04-16T20:11:23.347Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-16T20:11:23.350Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/chanto-web/tokens  
+  
+ Tue Apr 17 2018 03:11:23 GMT+0700 (+07)
+[debug] [2018-04-16T20:11:24.294Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'chanto-web'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-04-16T20:11:26.387Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/chanto-web/uploads/-LAF4LELKUEDDKmsghH8?fileCount=65&message=  
+  
+ Tue Apr 17 2018 03:11:26 GMT+0700 (+07)
+[debug] [2018-04-16T20:16:32.606Z] <<< HTTP RESPONSE 502
+[debug] [2018-04-16T20:16:32.606Z] <<< HTTP RESPONSE BODY <html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+[debug] [2018-04-16T20:16:32.608Z] TypeError: Cannot create property 'error' on string '<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+'
+    at module.exports (/Users/speedstars/.nvm/versions/node/v7.9.0/lib/node_modules/firebase-tools/lib/responseToError.js:11:16)
+    at Request._callback (/Users/speedstars/.nvm/versions/node/v7.9.0/lib/node_modules/firebase-tools/lib/api.js:45:25)
+    at Request.self.callback (/Users/speedstars/.nvm/versions/node/v7.9.0/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:194:7)
+    at Request.<anonymous> (/Users/speedstars/.nvm/versions/node/v7.9.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1163:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:191:7)
+    at IncomingMessage.<anonymous> (/Users/speedstars/.nvm/versions/node/v7.9.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1085:12)
+    at Object.onceWrapper (events.js:293:19)
+[error] 
+[error] Error: An unexpected error has occurred.

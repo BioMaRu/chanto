@@ -1,5 +1,25 @@
 {
   "hosting": {
-    "public": "public"
+    "public": "public",
+    "headers": [
+      {
+        "source" : "**/*.@(jpg|jpeg|gif|png|svg|css)",
+        "headers" : [
+          {
+            "key" : "Cache-Control",
+            "value" : "max-age=31536000"
+          }
+        ]
+      },
+      {
+        "source" : "**/*.@(ttf|otf)",
+        "headers" : [
+          {
+            "key" : "Cache-Control",
+            "value" : "max-age=31536000"
+          }
+        ]
+      }
+    ]
   }
 }

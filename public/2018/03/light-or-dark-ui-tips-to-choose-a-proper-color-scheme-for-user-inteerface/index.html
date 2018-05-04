@@ -4,27 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" type="image/png" href="images/favicon.png?v=1.1?v=1.0">
+  <link rel="icon" type="image/png" href="/images/favicon.png?v=1.1?v=1.0">
   <title>Light or Dark UI? Tips to Choose a Proper Color Scheme for User Inteerface | chanto.io</title>
   <link href="/css/chanto.biomatic.min.css" rel="stylesheet">
   <link href="/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
 </head>
 <body>
+  <header class="lo-container _bdbtw-1px _bdcl-neutral-200">
+  <div class="_dp-f _fdrt-cl">
+    <div class="_dp-f _alit-ct _jtfct-spbtw" style="height: var(--navbar-height)">
+      <a href="/">
+        <img
+          src="/images/logo.svg"
+          alt="Chanto Logo"
+          style="height: calc( var(--navbar-height) - 24px)"
+          draggable="false">
+      </a>
+    </div>
+    <div class="_bdtw-1px _bdcl-neutral-200"></div>
+    <div class="_dp-f _pdv-12px">
+      <ul class="_dp-f _fw-w">
+        
+        <li class="_pdh-12px">
+          <a href="/c/other" class="bio-link _ttf-upc">
+            other
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
 
+
+  
 <style>
   .text-container {
     width: 100%;
     max-width: 800px;
   }
+
   article h1, article h2, article h3, article h4, article h5, article h6 {
     margin-top: 48px
   }
+
   article img + p {
     margin-top: 48px;
   }
+
   article p {
     margin-top: 28px;
   }
+
   article h1 + p,
   article h2 + p,
   article h3 + p,
@@ -37,6 +68,7 @@
   article img {
     width: 100%;
   }
+
   article img + em {
     margin-top: 4px;
     opacity: 0.6;
@@ -45,17 +77,20 @@
     font-size: 0.86rem;
     text-align: center;
   }
+
   article ul {
     list-style: disc;
     padding-left: 30px;
     margin-top: 28px;
     margin-bottom: 0px;
   }
+
   article ol {
     margin-top: 28px;
     margin-bottom: 0px;
     padding-left: 30px;
   }
+
   article ul li,
   article ol li {
     line-height: 1.65;
@@ -68,37 +103,17 @@
   }
 </style>
 
-<div class="lo-container _bdbtw-1px _bdcl-neutral-200">
-  <div
-    class="_dp-f _fdrt-cl">
-    <div class="_dp-f _alit-ct _jtfct-spbtw"  style="height: var(--navbar-height)">
-      <a href="/">
-        <img
-          src="/images/logo.svg"
-          alt="Chanto Logo"
-          style="height: calc( var(--navbar-height) - 24px)"
-          draggable="false">
-      </a>
-    </div>
-    <div class="_bdtw-1px _bdcl-neutral-200"></div>
-    <div class="_dp-f _pdv-12px">
-      <ul class="_dp-f _fw-w">
-        <li class="_pdh-12px"><a href="#" class="bio-link">CODING</a></li>
-        <li class="_pdh-12px"><a href="#" class="bio-link">DESIGN</a></li>
-        <li class="_pdh-12px"><a href="#" class="bio-link">MISC.</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
 <section class="lo-container _jtfit-ct _pdv-48px">
 
   <div class="text-container _w-100pct _dp-f _jtfct-spbtw">
     <div>
-      <a href="#" class="bio-link -positive -fancy">
-        <strong>
-          WEB DESIGN
+      
+      <a href="/c/other">
+        <strong class="_cl-positive _ttf-upc">
+          other
         </strong>
       </a>
+      
       <span class="_opct-60">
         – 22 Mar 2018
       </span>
@@ -114,7 +129,7 @@
     style="max-width: 1000px; max-height: 400px;">
 
   <article class="text-container _fs-5 _mgt-24px _cl-black">
-
+    
 
 <p>Our everyday life is an endless flow of choices. In both personal and professional life, we have to consider numerous oppositions and challenges, and it’s better when solutions are based on not only suggestions but also facts, experience and knowledge. Today we are going to discuss one <a href="https://www.google.com" class="bio-link -fancy">Google&rsquo;s Homepage</a>
 of the frequent choices UI designers have to make project by project: which scheme is better for the interface, light or dark?</p>
@@ -167,9 +182,31 @@ However, some scientific studies dating back to 1980s show that for big bulks of
   </article>
 
 </section>
-<div class="_dp-f _alit-ct _jtfct-ct _bgcl-primary-00 _pd-16px _cl-primary-300 _fs-7" style="height: var(--footer-height)">
-  chanto.io @ 2018
+<div class="js-scroll-top-button _dp-n _dp-f-sm _alit-ct _jtfct-ct _cl-white _pst-f _bfvsblt-hd _zid-1 _w-48px _h-48px _bgcl-primary-300 _bgcl-primary-400-hover _r-12px _bt-12px _bdrd-4px _cs-pt _opct-80 u-rise">
+  <i class="far fa-chevron-up _fs-4"></i>
 </div>
 
+<script>
+  let intervalId = 0
+  const scrollButtonElem = document.querySelector('.js-scroll-top-button')
+
+  function scrollStep() {
+    if (window.pageYOffset === 0) {
+      clearInterval(intervalId)
+    }
+    window.scroll(0, window.pageYOffset - 128)
+  }
+
+  function scrollToTop() {
+    intervalId = setInterval(scrollStep, 16.66)
+  }
+
+  scrollButtonElem.addEventListener('click', scrollToTop)
+</script>
+
+
+  <footer class="_dp-f _alit-ct _jtfct-ct _bgcl-primary-00 _pd-16px _cl-primary-300 _fs-7" style="height: var(--footer-height)">
+  chanto.io @ 2018
+</footer>
 </body>
 </html>

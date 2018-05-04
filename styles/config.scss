@@ -62,17 +62,17 @@ $breakpoint-lg: 1200px;
   Default Font Family
 ======================================*/
 @font-face {
-  font-family: 'Cloud';
-  src: url('fonts/Cloud-Bold.otf');
+  font-family: 'CloudSoftBold';
+  src: url('/fonts/CloudSoftBold.otf');
 }
 
 @font-face {
   font-family: 'CSChatThaiUI';
-  src: url('fonts/CSChatThaiUI.ttf');
+  src: url('/fonts/CSChatThaiUI.ttf');
 }
 
 $font-primary: 'CSChatThaiUI', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-$font-secondary: 'Cloud Soft', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+$font-secondary: 'CloudSoftBold', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 
 /*====================================
   Mapping Value
