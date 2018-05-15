@@ -1,3 +1,10 @@
+<style>
+	.js-floating-shape {
+		position: absolute;
+		left: -50px
+	}
+</style>
+
 <header class="lo-12 -gap-32px _jtfit-ct _pdv-24px _pdh-12px _pst-rlt _zid-1">
 	<a href="/">
 		<img
@@ -23,12 +30,6 @@
 	</div>
 </header>
 
-<style>
-	.js-floating-shape {
-		position: absolute;
-		left: -50px
-	}
-</style>
 <div class="js-floating-shapes-container _pst-asl _w-100pct _h-128px _t-0px _l-0px _zid-0 _ptev-n">
 	<i class="js-floating-shape far fa-square"></i>
 	<i class="js-floating-shape fas fa-square"></i>
@@ -65,9 +66,9 @@
 </div>
 
 <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+<!-- <script src="/js/main.js"></script> -->
 <script>
 	const windowWidth = window.innerWidth;
-	console.log(windowWidth)
 	const shapesContainer = document.querySelector('.js-floating-shapes-container');
 	const shapesStyler = Array
 		.from(shapesContainer.childNodes)

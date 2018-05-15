@@ -3,13 +3,13 @@ languageCode = "en-us"
 title = "Chanto"
 
 [params]
-  AuthorName = "BioMaRu"
+	AuthorName = "BioMaRu"
 
 [permalinks]
-  article = "/:year/:month/:title"
-  categories = "/c/:slug/"
-  tags = "/t/:slug/"
+	article = "/:year/:month/:title"
+	categories = "/c/:slug/"
+	tags = "/t/:slug/"
 
 [taxonomies]
-  category = "categories"
-  tag = "tags"
+	category = "categories"
+	tag = "tags"
