@@ -1,4 +1,4 @@
-<header class="lo-12 -gap-32px _jtfit-ct _pdv-24px _pdh-12px">
+<header class="lo-12 -gap-32px _jtfit-ct _pdv-24px _pdh-12px _pst-rlt _zid-1">
 	<a href="/">
 		<img
 		src="/images/logo.svg"
@@ -23,33 +23,52 @@
 	</div>
 </header>
 
-<div class="js-floating-shapes-container _pst-asl _w-100pct _h-128px _t-0px _l-0px">
-	<!-- <img src="/images/circle1.svg" class="circle1" draggable="false">
-	<img src="/images/triangle1.svg" class="triangle1" draggable="false">
-	<img src="/images/poly1.svg" class="poly1" draggable="false">
-	<img src="/images/ring1.svg" class="ring1" draggable="false">
-	<img src="/images/rect1.svg" class="rect1" draggable="false"> -->
-	<i class="js-floating-shape far fa-square"></i>
-	<i class="js-floating-shape fal fa-times"></i>
-</div>
-
 <style>
-	.a {
-		color: hsl(269, 100%, 91%)
+	.js-floating-shape {
+		position: absolute;
+		left: -50px
 	}
 </style>
+<div class="js-floating-shapes-container _pst-asl _w-100pct _h-128px _t-0px _l-0px _zid-0 _ptev-n">
+	<i class="js-floating-shape far fa-square"></i>
+	<i class="js-floating-shape fas fa-square"></i>
+	<i class="js-floating-shape far fa-square _fs-5"></i>
+	<i class="js-floating-shape fas fa-square _fs-5"></i>
+	<i class="js-floating-shape far fa-triangle"></i>
+	<i class="js-floating-shape fas fa-triangle"></i>
+	<i class="js-floating-shape far fa-square"></i>
+	<i class="js-floating-shape fas fa-square"></i>
+	<i class="js-floating-shape far fa-square _fs-5"></i>
+	<i class="js-floating-shape fas fa-square _fs-5"></i>
+	<i class="js-floating-shape far fa-triangle"></i>
+	<i class="js-floating-shape fas fa-triangle"></i>
+	<i class="js-floating-shape far fa-triangle _fs-4"></i>
+	<i class="js-floating-shape fas fa-triangle _fs-4"></i>
+	<i class="js-floating-shape far fa-circle"></i>
+	<i class="js-floating-shape fas fa-circle"></i>
+	<i class="js-floating-shape far fa-circle _fs-4"></i>
+	<i class="js-floating-shape far fa-circle"></i>
+	<i class="js-floating-shape fas fa-circle"></i>
+	<i class="js-floating-shape far fa-circle _fs-4"></i>
+	<i class="js-floating-shape fas fa-circle _fs-4"></i>
+	<i class="js-floating-shape fas fa-asterisk _fs-7"></i>
+	<i class="js-floating-shape fas fa-asterisk _fs-8"></i>
+	<i class="js-floating-shape far fa-badge"></i>
+	<i class="js-floating-shape far fa-times _fs-7"></i>
+	<i class="js-floating-shape far fa-times _fs-7"></i>
+	<i class="js-floating-shape far fa-times _fs-7"></i>
+	<i class="js-floating-shape far fa-times"></i>
+	<i class="js-floating-shape fas fa-diamond"></i>
+	<i class="js-floating-shape far fa-diamond"></i>
+	<i class="js-floating-shape fas fa-diamond _fs-5"></i>
+	<i class="js-floating-shape far fa-diamond _fs-4"></i>
+</div>
+
 <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
 <script>
 	const windowWidth = window.innerWidth;
-
-	// const circle1Styler = popmotion.styler(document.querySelector('.circle1'));
-	// const triangle1Styler = popmotion.styler(document.querySelector('.triangle1'));
-	// const ring1Styler = popmotion.styler(document.querySelector('.ring1'));
-	// const poly1Styler = popmotion.styler(document.querySelector('.poly1'));
-	// const rect1Styler = popmotion.styler(document.querySelector('.rect1'));
-
+	console.log(windowWidth)
 	const shapesContainer = document.querySelector('.js-floating-shapes-container');
-
 	const shapesStyler = Array
 		.from(shapesContainer.childNodes)
 		.filter(v => v.classList)
@@ -57,18 +76,17 @@
 
 	shapesStyler.map((styler, i, arr) => {
 		const numItems = arr.length
-		const minDurataionX = 9000;
-		const maxDurataionX = 14000;
-		const minDurataionY = 300;
-		const maxDurataionY = 6000;
-		const minPositionY = 5;
-		const maxPositionY = 60;
-
-		const ran = Math.random()
+		const minDurataionX = 28000;
+		const maxDurataionX = 38000;
+		const minDurataionY = 8000;
+		const maxDurataionY = 12000;
+		const minPositionY = 10;
+		const maxPositionY = 160;
 
 		const alphaDurationX = minDurataionX + Math.floor((maxDurataionX - minDurataionX) / (i + 1))
 		const alphaDurationY = minDurataionY + Math.floor((maxDurataionY - minDurataionY) / (i + 1))
-		const alphaRotate = 120 + Math.floor((240) * ran)
+		const alphaRotate = 120 + Math.floor((240) * Math.random())
+
 		const randomHue = Math.floor(Math.random() * 360)
 		const randomHue2 = Math.floor(Math.random() * 360)
 		const alphaColorStart = popmotion.valueTypes.color.transform({
@@ -77,6 +95,7 @@
 			lightness: 87,
 			alpha: 1
 		});
+
 		const alphaColorStop = popmotion.valueTypes.color.transform({
 			hue: randomHue2,
 			saturation: 100,
@@ -84,110 +103,25 @@
 			alpha: 1
 		});
 
+		const alphaElapsedA = Math.random() * maxDurataionX * -1;
+		const alphaElapsedB = Math.random() * maxDurataionY;
+
 		popmotion.tween({
-			from: { x: -50 },
-			to: { x: windowWidth },
-			ease: popmotion.easing.easeInOut,
+			from: { x: 0, color: alphaColorStart },
+			to: { x: windowWidth, color: alphaColorStop },
+			ease: popmotion.easing.linear,
 			flip: Infinity,
-			duration: alphaDurationX
+			duration: alphaDurationX,
+			elapsed: alphaElapsedA
 		}).start(styler.set);
 
 		popmotion.tween({
-			from: { y: 5, rotate: 0, color: alphaColorStart },
-			to: { y: 30, rotate: alphaRotate, color: alphaColorStop },
-			ease: popmotion.easing.easeInOut,
+			from: { y: minPositionY, rotate: 0 },
+			to: { y: maxPositionY, rotate: alphaRotate },
+			ease: popmotion.easing.linear,
 			flip: Infinity,
-			duration: alphaDurationY
+			duration: alphaDurationY,
+			elapsed: alphaElapsedB
 		}).start(styler.set);
 	})
-	// Circle 1
-	// popmotion.tween({
-	// 	from: { x: -50 },
-	// 	to: { x: windowWidth},
-	// 	ease: popmotion.easing.easeInOut,
-	// 	flip: Infinity,
-	// 	duration: 15000
-	// }).start(circle1Styler.set);
-
-	// popmotion.tween({
-	// 	from: { y: 5 },
-	// 	to: { y: 30 },
-	// 	ease: popmotion.easing.easeInOut,
-	// 	flip: Infinity,
-	// 	duration: 3000
-	// }).start(circle1Styler.set);
-
-	// // Tri 1
-	// popmotion.tween({
-	// 	from: { x: -50 },
-	// 	to: { x: windowWidth },
-	// 	ease: popmotion.easing.easeInOut,
-	// 	flip: Infinity,
-	// 	duration: 12000,
-	// 	elapsed: 2000
-	// }).start(triangle1Styler.set);
-
-	// popmotion.tween({
-	// 	from: { y: 5, rotate: 0 },
-	// 	to: { y: 30, rotate: 180 },
-	// 	ease: popmotion.easing.easeInOut,
-	// 	flip: Infinity,
-	// 	duration: 3000,
-	// 	elapsed: 2000
-	// }).start(triangle1Styler.set);
-
-	// // Ring 1
-	// popmotion.tween({
-	// 	from: { x: -50 },
-	// 	to: { x: windowWidth },
-	// 	ease: popmotion.easing.easeInOut,
-	// 	flip: Infinity,
-	// 	duration: 10000,
-	// 	elapsed: 3000
-	// }).start(ring1Styler.set);
-
-	// popmotion.tween({
-	// 	from: { y: 5 },
-	// 	to: { y: 30 },
-	// 	ease: popmotion.easing.easeInOut,
-	// 	flip: Infinity,
-	// 	duration: 2000,
-	// 	elapsed: 3000
-	// }).start(ring1Styler.set);
-
-	// // Poly1
-	// popmotion.tween({
-	// 	from: { x: -50 },
-	// 	to: { x: windowWidth },
-	// 	ease: popmotion.easing.easeInOut,
-	// 	flip: Infinity,
-	// 	duration: 10000,
-	// 	elapsed: 5000
-	// }).start(poly1Styler.set);
-
-	// popmotion.tween({
-	// 	from: { y: 5, rotate: 0 },
-	// 	to: { y: 50, rotate: 240 },
-	// 	ease: popmotion.easing.easeInOut,
-	// 	flip: Infinity,
-	// 	duration: 4000,
-	// }).start(poly1Styler.set);
-
-	// // Rect1
-	// popmotion.tween({
-	// 	from: { x: -50 },
-	// 	to: { x: windowWidth },
-	// 	ease: popmotion.easing.easeInOut,
-	// 	flip: Infinity,
-	// 	duration: 20000,
-	// 	elapsed: 2500
-	// }).start(rect1Styler.set);
-
-	// popmotion.tween({
-	// 	from: { y: 5, rotate: 0 },
-	// 	to: { y: 40, rotate: 180 },
-	// 	ease: popmotion.easing.easeInOut,
-	// 	flip: Infinity,
-	// 	duration: 4000,
-	// }).start(rect1Styler.set);
 </script>
