@@ -7,3 +7,8 @@ style:
 minify:
 	rm -rf dist
 	gulp minify
+
+deploy:
+	hugo
+	make minify
+	firebase deploy
