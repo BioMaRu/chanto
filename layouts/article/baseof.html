@@ -7,8 +7,11 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" type="image/png" href="/images/favicon.png">
 	<title>{{.Params.pageTitle}}</title>
-	<link href="/css/main.css" rel="stylesheet">
-	<link href="/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+	<link rel="preload" as="style" href="/css/main.css">
+	<link rel="preload" as="style" href="/fontawesome/css/fontawesome-all.min.css">
+
+	<link rel="stylesheet" href="/fontawesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
