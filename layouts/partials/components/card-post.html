@@ -1,11 +1,14 @@
 <div>
 	<a href="{{.Permalink}}">
-		<img src="{{.Params.thumbnailImgUrl}}" class="_ojf-cv _w-100pct _h-196px _ojf-cv" draggable="false">
+		<img
+			src="{{.Permalink}}{{.Params.thumbnailImgUrl}}"
+			class="_ojf-cv _w-100pct _h-196px _ojf-cv"
+			draggable="false">
 	</a>
-	<div class="_pdv-16px lo-12 -gap-12px">
+	<div class="_pdv-16px lo-12 _gg-12px">
 		<div class="_dp-f _jtfct-spbtw _fs-7">
 			{{ range .Params.categories }}
-			<a href="{{ " /c/ " | relLangURL }}{{ . | urlize }}">
+			<a href="{{ "/c/" | relLangURL }}{{ . | urlize }}">
 				<strong class="_cl-positive _ttf-upc">
 					{{.}}
 				</strong>

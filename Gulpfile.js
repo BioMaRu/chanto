@@ -1,18 +1,29 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
-const autoprefixer = require('gulp-autoprefixer')
-const rename = require('gulp-rename')
 const htmlmin = require('gulp-htmlmin')
 const minifyInline = require('gulp-minify-inline')
+const purgecss = require('gulp-purgecss')
+const filenames = require('gulp-filenames')
 
-gulp.task('build', function () {
-	const outputConfigs = {
-		src: './styles/main.scss',
-		prefix: 'chanto.',
-		basename: 'biomatic'
-	}
-	generateCSS(outputConfigs)
-})
+const sassOption = {
+	outputStyle: 'compressed',
+	includePaths: 'node_modules'
+}
+
+gulp.task('build-dev', () => gulp
+	.src('./styles/main.scss')
+	.pipe(sass(sassOption).on('error', sass.logError))
+	// .pipe(filenames('style'))
+	.pipe(gulp.dest('./static/css'))
+)
+
+gulp.task('build-prod', () => gulp
+	.src('./styles/main.scss')
+	.pipe(sass(sassOption).on('error', sass.logError))
+	.pipe(purgecss({ content: ['layouts/**/*.html'] }))
+	// .pipe(filenames('style'))
+	.pipe(gulp.dest('./static/css'))
+)
 
 gulp.task('minify', function () {
 	gulp.src('./public/**/*.html')
@@ -25,22 +36,3 @@ gulp.task('minify', function () {
 		.pipe(minifyInline())
 		.pipe(gulp.dest('./public'))
 });
-
-function generateCSS({ src = '', prefix = '', basename = '' }) {
-	gulp
-		.src(src)
-		.pipe(sass({
-			includePaths: ['node_modules'],
-			outputStyle: 'compressed'
-		}).on('error', sass.logError))
-		.pipe(autoprefixer({ browsers: ['last 2 versions'] }))
-		.pipe(
-			rename({
-				basename,
-				prefix,
-				suffix: '.min',
-				extname: '.css'
-			})
-		)
-		.pipe(gulp.dest('./static/css'))
-}

@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'CloudSoftBold';
+	src: url('/fonts/CloudSoftBold.otf');
+}
+
+@font-face {
+	font-family: 'CSChatThaiUI';
+	src: url('/fonts/CSChatThaiUI.ttf');
+}
+
+$font-primary:
+	'CSChatThaiUI',
+	-apple-system,
+	system-ui,
+	BlinkMacSystemFont,
+	"Segoe UI",
+	Roboto,
+	"Helvetica Neue",
+	sans-serif;
+
+$font-secondary:
+	'CloudSoftBold',
+	-apple-system,
+	system-ui,
+	BlinkMacSystemFont,
+	"Segoe UI",
+	Roboto,
+	"Helvetica Neue",
+	sans-serif;

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Chanto</title>
-    <link>http://chanto.io/categories/</link>
+    <link>https://chanto.io/categories/</link>
     <description>Recent content in Categories on Chanto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://chanto.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chanto.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Other</title>
-      <link>http://chanto.io/c/other/</link>
-      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      <link>https://chanto.io/c/other/</link>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://chanto.io/c/other/</guid>
+      <guid>https://chanto.io/c/other/</guid>
       <description></description>
     </item>
     

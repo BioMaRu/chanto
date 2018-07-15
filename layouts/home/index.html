@@ -1,19 +1,14 @@
 {{define "content"}}
-{{partial "navbar/navbar.html" .}}
-<div>
-	<div class="_pdv-32px">
-		<div class="lo-container">
-			<div class="lo-12 -gap-32px">
-				<div>
-					<p class="_fs-4 _bdbtw-1px _pdbt-8px _bdcl-neutral-300 _cl-black _mgbt-24px">Latest</p>
-					<div class="lo-12 lo-6-sm lo-4-md -gap-32px _w-100pct">
-					{{range $i, $post := first 5 .Data.Pages.ByPublishDate}}
-						{{partial "components/card-post.html" $post}}
-					{{end}}
-					</div>
-				</div>
-			</div>
-		</div>
+{{partial "navbar.html" .}}
+<div class="lo-container _pdv-32px _gg-24px">
+	<div class="_fs-4 _ffml-secondary _fw-500 _bdbtw-1px _pdbt-4px _bdcl-neutral-100">
+		บทความล่าสุด
+	</div>
+
+	<div class="lo-12 lo-6-sm lo-4-md _gg-32px _w-100pct">
+	{{range $i, $post := first 5 .Data.Pages.ByPublishDate}}
+		{{partial "components/card-post.html" $post}}
+	{{end}}
 	</div>
 </div>
-{{partial "footer/footer.html" .}} {{end}}
+{{partial "footer.html" .}} {{end}}

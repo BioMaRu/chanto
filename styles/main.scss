@@ -1,5 +1,4 @@
-@import 'biomatic/src/reset';
-@import 'config';
+@import 'config/config';
 @import 'biomatic/src/mixins/mixins';
 
 @import 'biomatic/src/layouts/layout';
@@ -7,9 +6,15 @@
 @import 'biomatic/src/utilities/utilities';
 @import 'biomatic/src/atomic/atomic';
 
-@import 'addon';
-
 :root {
-  --navbar-height: 60px;
-  --footer-height: 80px;
+	--navbar-height: 60px;
+	--footer-height: 80px;
+}
+
+::selection {
+	background: hsla(269, 87%, 58%, 0.212);
+}
+
+::-moz-selection {
+	background: hsla(269, 87%, 58%, 0.212);
 }

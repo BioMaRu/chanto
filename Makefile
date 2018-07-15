@@ -1,8 +1,12 @@
 dev:
+	make style-dev
 	hugo serve
 
-style:
-	yarn run style
+style-dev:
+	gulp build-dev
+
+style-prod:
+	gulp build-prod
 
 minify:
 	rm -rf dist
@@ -10,5 +14,6 @@ minify:
 
 deploy:
 	hugo
+	gulp build-prod
 	make minify
 	firebase deploy

@@ -1,18 +1,22 @@
 {
-  "name": "chanto",
-  "version": "0.0.1",
-  "scripts": {
-    "style": "gulp build"
-  },
-  "dependencies": {
-    "biomatic": "=0.1.16"
-  },
-  "devDependencies": {
-    "gulp": "=3.9.1",
-    "gulp-autoprefixer": "=4.0.0",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-minify-inline": "^1.0.0",
-    "gulp-rename": "=1.2.2",
-    "gulp-sass": "=3.1.0"
-  }
+	"name": "chanto",
+	"version": "0.0.1",
+	"scripts": {
+		"style-dev": "gulp build-dev",
+		"style-prod": "gulp build-prod"
+	},
+	"dependencies": {
+		"biomatic": "=0.2.6"
+	},
+	"devDependencies": {
+		"gulp": "=3.9.1",
+		"gulp-autoprefixer": "=4.0.0",
+		"gulp-filenames": "^4.0.1",
+		"gulp-fs": "^0.0.2",
+		"gulp-htmlmin": "^4.0.0",
+		"gulp-minify-inline": "^1.0.0",
+		"gulp-purgecss": "^1.0.0",
+		"gulp-rename": "=1.2.2",
+		"gulp-sass": "=3.1.0"
+	}
 }

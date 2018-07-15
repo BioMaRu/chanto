@@ -2,9 +2,9 @@
 title: "Light or Dark UI? Tips to Choose a Proper Color Scheme for User Inteerface"
 description: "Our everyday life is an endless flow of choices. In both personal and professional life, we have to consider numerous oppositions and…"
 pageTitle: "Light or Dark UI? Tips to Choose a Proper Color Scheme for User Inteerface | chanto.io"
-thumbnailImgUrl: "https://cdn-images-1.medium.com/fit/t/800/240/1*odG2LJMa7L_5FnRm73w8NA.png"
-coverImgUrl: "https://cdn-images-1.medium.com/max/1000/1*odG2LJMa7L_5FnRm73w8NA.png"
-publishDate: "2018-03-22"
+thumbnailImgUrl: "cover.png"
+coverImgUrl: "cover.png"
+publishDate: "2018-07-10"
 
 # Taxonomies
 categories: ["other"]
@@ -37,7 +37,7 @@ Be sure, there is no one particular choice which would work for all the aims. Th
 Readability and legibility
 These terms are both directly connected to the perception of content presented with text. Readability defines how easily people can read words, phrases, and blocks of copy. Legibility measures how quickly and intuitively users can distinguish the letters in a particular typeface.
 
-![alt text](https://cdn-images-1.medium.com/max/1000/1*odG2LJMa7L_5FnRm73w8NA.png "Logo Title Text 1")
+![alt text](cover.png "Logo Title Text 1")
 *Great Image*
 
 These characteristics should be carefully considered, especially for the interfaces filled with a lot of text. Among many other factors, the color scheme chosen for the interface plays the crucial role in the effective process of text perception. For example, as well as with physical objects perceived on different backgrounds, black copy shown on white or light background seems to be larger than the white copy on a dark background. Poor readability results in poor user experience: users aren’t able to scan the data, even more — even if the data is relevant but not readable, users feel the inexplicable tense struggling with the text or may even miss the critical information.

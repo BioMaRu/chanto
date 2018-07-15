@@ -1,0 +1,14 @@
+html {
+	color: $color-dark;
+	font-family: $font-primary;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+hr {
+	height: 0;
+	width: 100%;
+	border: 0px;
+	border-bottom: 1px solid $color-gray;
+}

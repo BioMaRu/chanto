@@ -1,6 +1,6 @@
 {{define "content"}}
 <style>
-	.text-container {
+	.article-container {
 		width: 100%;
 		max-width: 800px;
 	}
@@ -70,8 +70,7 @@
 </style>
 
 <section class="lo-container _jtfit-ct _pdv-48px">
-
-	<div class="text-container _w-100pct _dp-f _jtfct-spbtw">
+	<div class="article-container _w-100pct _dp-f _jtfct-spbtw">
 		<div>
 			{{ range .Params.categories }}
 			<a href="{{ " /c/ " | relLangURL }}{{ . | urlize }}">
@@ -86,13 +85,12 @@
 		</div>
 	</div>
 
-	<h1 class="text-container _ffml-secondary _fs-2 _cl-black _mgt-24px">{{ .Title }}</h1>
+	<h1 class="article-container _ffml-secondary _fs-2 _cl-dark _mgt-24px">{{ .Title }}</h1>
 
 	<img src="{{.Params.coverImgUrl}}" alt="Cover Image" class="_w-100pct _mgt-32px _ojf-cv" style="max-width: 1000px; max-height: 400px;">
 
-	<article class="text-container _fs-5 _mgt-24px _cl-black">
+	<article class="article-container _fs-5 _mgt-24px _cl-dark">
 		{{ .Content }}
 	</article>
-
 </section>
 {{partial "components/button-scroll-top.html"}} {{end}}
