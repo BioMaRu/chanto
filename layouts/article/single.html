@@ -3,6 +3,7 @@
 	.article-container {
 		width: 100%;
 		max-width: 800px;
+		font-size: 1.25rem;
 	}
 
 	article h1,
@@ -63,6 +64,11 @@
 		line-height: 1.65;
 	}
 
+	article ul li:not(:first-child),
+	article ol li:not(:first-child) {
+		margin-top: 8px;
+	}
+
 	article blockquote {
 		font-style: italic;
 		opacity: 0.6;
@@ -96,7 +102,7 @@
 		class="_w-100pct _mgt-32px _ojf-cv"
 		style="max-width: 1000px; max-height: 400px;">
 
-	<article class="article-container _fs-5 _mgt-24px _cl-dark">
+	<article class="article-container _mgt-24px _cl-dark">
 		{{ .Content }}
 	</article>
 </section>

@@ -20,6 +20,12 @@ type: "article"
 Our everyday life is an endless flow of choices. In both personal and professional life, we have to consider numerous oppositions and challenges, and it’s better when solutions are based on not only suggestions but also facts, experience and knowledge. Today we are going to discuss one <a href="https://www.google.com" class="bio-link -fancy">Google's Homepage</a>
 of the frequent choices UI designers have to make project by project: which scheme is better for the interface, light or dark?
 
+Google จึงได้ออก metric ใหม่ที่ไว้วัด performance ของเว็บ โดยอิงจาก “ประสบการณ์การใช้งานของ user” และเรียกมันว่า User-centric performance metrics metric ที่ว่ามี 4 ตัว
+
+* **First Paint (FP):** เริ่มเห็นว่ามีอะไรสักอย่างขึ้นมาละ
+* **First Paint (FP):** เริ่มเห็นว่ามีอะไรสักอย่างขึ้นมาละ
+* **First Paint (FP):** เริ่มเห็นว่ามีอะไรสักอย่างขึ้นมาละ เริ่มเห็นว่ามีอะไรสักอย่างขึ้นมาละ เริ่มเห็นว่ามีอะไรสักอย่างขึ้นมาละ เริ่มเห็นว่ามีอะไรสักอย่างขึ้นมาละ เริ่มเห็นว่ามีอะไรสักอย่างขึ้นมาละ
+
 ### Hello
 Factors Influencing the Choice of Color Scheme
 Be sure, there is no one particular choice which would work for all the aims. The solution heavily depends on numerous factors covering not only user’s side but also business goals, market conditions, and current design trends. Let’s review the essential factors which have to be considered regarding the issue.
