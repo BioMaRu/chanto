@@ -55,6 +55,7 @@
 		margin-top: 28px;
 		margin-bottom: 0px;
 		padding-left: 30px;
+		list-style: decimal;
 	}
 
 	article ul li,
@@ -85,9 +86,15 @@
 		</div>
 	</div>
 
-	<h1 class="article-container _ffml-secondary _fs-2 _cl-dark _mgt-24px">{{ .Title }}</h1>
+	<h1 class="article-container _ffml-secondary _fs-2 _cl-dark _mgt-24px">
+		{{ .Title }}
+	</h1>
 
-	<img src="{{.Params.coverImgUrl}}" alt="Cover Image" class="_w-100pct _mgt-32px _ojf-cv" style="max-width: 1000px; max-height: 400px;">
+	<img
+		src="{{.Params.coverImgUrl}}"
+		alt="Cover Image"
+		class="_w-100pct _mgt-32px _ojf-cv"
+		style="max-width: 1000px; max-height: 400px;">
 
 	<article class="article-container _fs-5 _mgt-24px _cl-dark">
 		{{ .Content }}

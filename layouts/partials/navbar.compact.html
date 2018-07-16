@@ -1,16 +1,20 @@
-<header class="lo-container _bdbtw-1px _bdcl-neutral-200">
+<header class="lo-container _bdbtw-1px _bdcl-neutral-100">
 	<div class="_dp-f _fdrt-cl">
 		<div class="_dp-f _alit-ct _jtfct-spbtw" style="height: var(--navbar-height)">
 			<a href="/">
-				<img src="/images/logo.svg" alt="Chanto Logo" style="height: calc( var(--navbar-height) - 24px)" draggable="false">
+				<img
+					src="/images/logo.svg"
+					alt="Chanto Logo"
+					style="height: calc( var(--navbar-height) - 24px)"
+					draggable="false">
 			</a>
 		</div>
-		<div class="_bdtw-1px _bdcl-neutral-200"></div>
+		<div class="_bdtw-1px _bdcl-neutral-100"></div>
 		<div class="_dp-f _pdv-12px">
 			<ul class="_dp-f _fw-w">
 				{{ range $taxonomyname, $taxonomy := .Site.Taxonomies.categories }}
 				<li class="_pdh-12px">
-					<a href="{{ " /c/ " | relLangURL }}{{ $taxonomyname | urlize }}" class="bio-link _ttf-upc">
+					<a href="{{ "/c/" | relLangURL }}{{ $taxonomyname | urlize }}" class="bio-link _ttf-upc">
 						{{$taxonomyname}}
 					</a>
 				</li>
