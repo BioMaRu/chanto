@@ -6,18 +6,20 @@
     <description>Recent content in chanto.io on Chanto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chanto.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Light or Dark UI? Tips to Choose a Proper Color Scheme for User Inteerface</title>
-      <link>https://chanto.io/2018/07/light-or-dark-ui-tips-to-choose-a-proper-color-scheme-for-user-inteerface/</link>
-      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
+      <title>ชีวิตง่ายขึ้นด้วยระบบสีแบบ HSL ใน CSS</title>
+      <link>https://chanto.io/2018/07/why-hsl-color-design-programing/</link>
+      <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://chanto.io/2018/07/light-or-dark-ui-tips-to-choose-a-proper-color-scheme-for-user-inteerface/</guid>
-      <description>Our everyday life is an endless flow of choices. In both personal and professional life, we have to consider numerous oppositions and challenges, and it’s better when solutions are based on not only suggestions but also facts, experience and knowledge. Today we are going to discuss one Google&amp;rsquo;s Homepage of the frequent choices UI designers have to make project by project: which scheme is better for the interface, light or dark?</description>
+      <guid>https://chanto.io/2018/07/why-hsl-color-design-programing/</guid>
+      <description> Web Designer และ Frontend Developer แทบทุกคน คงหนีไม่พ้นที่จะต้องทำงานเกี่ยวข้องกับเรื่องของ &amp;ldquo;สี&amp;rdquo; อย่างแน่นอน ซึ่งใน CSS Color โดยทั่วไปนั้น จะใช้รูปแบบเป็น RGB Color ในรูปของ rgb() หรือ HEX–Notation
+ในบทความนี้ จะมาพูดถึงรูปแบบของสีใน CSS Color อีกรูปแบบหนึ่ง นั่นคือ HSL Color ซึ่งมีข้อดูข้อเสีย และช่วยให้ชีวิตเราง่ายขึ้นได้อย่างไรนั้น ผมจะเล่าให้ฟังครับ
+Color Space -- RGB Color ไม่ดียังไง </description>
     </item>
     
   </channel>

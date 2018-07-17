@@ -12,7 +12,8 @@
 	article h4,
 	article h5,
 	article h6 {
-		margin-top: 48px
+		margin-top: 48px;
+		font-family: var(--font-secondary);
 	}
 
 	article img+p {
@@ -74,6 +75,16 @@
 		opacity: 0.6;
 		font-size: 1.5em;
 	}
+
+	article code {
+		background-color: #f8f8f8;
+		border: 1px solid #ddd;
+		font-size: 0.9rem;
+		overflow: auto;
+		padding: 4px 10px;
+		border-radius: 3px;
+		vertical-align: middle;
+	}
 </style>
 
 <section class="lo-container _jtfit-ct _pdv-48px">
@@ -106,4 +117,7 @@
 		{{ .Content }}
 	</article>
 </section>
-{{partial "components/button-scroll-top.html"}} {{end}}
+{{/*
+{{partial "components/button-scroll-top.html"}}
+*/}}
+{{end}}

@@ -6,7 +6,7 @@ title = "Chanto"
 	AuthorName = "BioMaRu"
 
 [permalinks]
-	article = "/:year/:month/:title"
+	article = "/:year/:month/:slug"
 	categories = "/c/:slug/"
 	tags = "/t/:slug/"
 

@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="lo-12 lo-6-sm lo-4-md _gg-32px _w-100pct">
-	{{range $i, $post := first 5 .Data.Pages.ByPublishDate}}
+	{{range $i, $post := (.Data.Pages.ByPublishDate).Reverse}}
 		{{partial "components/card-post.html" $post}}
 	{{end}}
 	</div>
