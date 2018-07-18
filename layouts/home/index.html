@@ -1,11 +1,11 @@
 {{define "content"}}
 {{partial "navbar.html" .}}
-<div class="lo-container _pdv-32px _gg-24px">
+<div class="lo-container _pdv-32px">
 	<div class="_fs-4 _ffml-secondary _fw-500 _bdbtw-1px _pdbt-4px _bdcl-neutral-100">
 		Latest
 	</div>
 
-	<div class="lo-12 lo-6-sm lo-4-md _gg-32px _w-100pct">
+	<div class="lo-12 lo-6-sm lo-4-md _gg-32px _w-100pct _mgt-24px">
 	{{range $i, $post := (.Data.Pages.ByPublishDate).Reverse}}
 		{{partial "components/card-post.html" $post}}
 	{{end}}

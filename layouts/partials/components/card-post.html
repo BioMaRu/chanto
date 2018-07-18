@@ -16,12 +16,12 @@
 		<div class="_dp-f _jtfct-spbtw _fs-7">
 			{{ range .Params.categories }}
 			<a href="{{ "/c/" | relLangURL }}{{ . | urlize }}">
-				<strong class="_cl-positive _ttf-upc">
+				<strong class="_cl-primary _ttf-upc">
 					{{.}}
 				</strong>
 			</a>
 			{{ end }}
-			<div class="_opct-60">
+			<div class="_opct-80">
 				{{dateFormat "2 Jan 2006" .PublishDate}}
 			</div>
 		</div>
@@ -35,7 +35,7 @@
 				{{.Params.description}}
 			</p>
 		</a>
-		<small class="_opct-60">
+		<small class="_opct-80">
 			{{.Params.minRead}} min read
 		</small>
 	</div>

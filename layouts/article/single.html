@@ -39,7 +39,7 @@
 
 	article img+em {
 		margin-top: 4px;
-		opacity: 0.6;
+		opacity: 0.8;
 		width: 100%;
 		display: block;
 		font-size: 0.86rem;
@@ -91,13 +91,13 @@
 	<div class="article-container _w-100pct _dp-f _jtfct-spbtw">
 		<div>
 			{{ range .Params.categories }}
-			<a href="{{ " /c/ " | relLangURL }}{{ . | urlize }}">
-				<strong class="_cl-positive _ttf-upc">
+			<a href="{{ "/c/" | relLangURL }}{{ . | urlize }}">
+				<strong class="_cl-primary _ttf-upc">
 					{{.}}
 				</strong>
 			</a>
 			{{ end }}
-			<span class="_opct-60">
+			<span class="_opct-80">
 				– {{ .Date.Format "2 Jan 2006" }}
 			</span>
 		</div>

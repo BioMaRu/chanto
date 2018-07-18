@@ -22,12 +22,9 @@ minRead: "7"
 type: "article"
 ---
 
-ในการทำงานของ Web Designer และ Frontend Developer แทบทุกคน คงหนีไม่พ้นที่จะต้องทำงานเกี่ยวข้องกับเรื่องของ **"สี"** อย่างแน่นอน ซึ่งใน CSS Color โดยทั่วไปนั้น เราก็มักจะเห็นการใช้งานในรูปแบบของ RGB Color (Red Green Blue) ซะเป็นส่วนใหญ่ เช่น rgb(100, 50, 200), rgba()
+ในการทำงานของ Web Designer และ Frontend Developer แทบทุกคน คงหนีไม่พ้นที่จะต้องทำงานเกี่ยวข้องกับเรื่องของ "สี" อย่างแน่นอน ซึ่งใน CSS นั้น เราก็มักจะเห็นการใช้งาน ในรูปแบบของ RGB Color (Red Green Blue) เป็นส่วนใหญ่
 
 ในบทความนี้ จะมาพูดถึงรูปแบบของสี อีกรูปแบบหนึ่ง นั่นคือ HSL Color (Hue Saturation Lightness) ซึ่งมีข้อดูข้อเสีย และช่วยให้ชีวิตเราง่ายขึ้นได้อย่างไรนั้น ผมจะเล่าให้ฟังครับ แต่ก่อนอื่น เรามาทำความรู้จักกับ ระบบสี RGB Color คร่าว ๆ กันก่อนครับ
-
-<!-- <a href="https://en.wikipedia.org/wiki/List_of_color_spaces_and_their_uses" target="_blank" rel="noopener noreferrer" class="bio-link -fancy">Color Space</a> -->
-<!-- _"ขอสีเดิมนะแต่ปรับให้สว่างกว่านี้หน่อย"_ -->
 
 ## RGB Color: ระบบสียอดนิยม จากการผสมกันของแม่สีทั้งสาม
 
@@ -164,7 +161,7 @@ Button ในงาน UI นั้นไม่ได้มีแค่เพี
 
 <p class="_tal-ct">
 	<img src="button.svg" alt="Button Example" class="_mxw-512px">
-	<em>Button ที่ State ต่างๆ</em>
+	<em>Button ที่ State normal, hover และ disabled</em>
 </p>
 
 ## ข้อเสียของ HSL Color

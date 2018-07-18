@@ -4,6 +4,9 @@ const htmlmin = require('gulp-htmlmin')
 const minifyInline = require('gulp-minify-inline')
 const purgecss = require('gulp-purgecss')
 const filenames = require('gulp-filenames')
+const rev = require('gulp-rev')
+const collect = require('gulp-rev-collector')
+const revdel = require('gulp-rev-del')
 
 const sassOption = {
 	outputStyle: 'compressed',
@@ -11,22 +14,24 @@ const sassOption = {
 }
 
 gulp.task('build-dev', () => gulp
-	.src('./styles/main.scss')
+	.src(['./styles/main.scss'])
 	.pipe(sass(sassOption).on('error', sass.logError))
-	// .pipe(filenames('style'))
 	.pipe(gulp.dest('./static/css'))
 )
 
 gulp.task('build-prod', () => gulp
-	.src('./styles/main.scss')
+	.src(['./styles/main.scss'])
 	.pipe(sass(sassOption).on('error', sass.logError))
-	.pipe(purgecss({ content: ['layouts/**/*.html'] }))
-	// .pipe(filenames('style'))
+	.pipe(purgecss({ content: ['layouts/**/*.html', 'content/**/*.md'] }))
 	.pipe(gulp.dest('./static/css'))
+	.pipe(rev())
+	.pipe(gulp.dest('./static/css'))
+	.pipe(rev.manifest())
+	.pipe(gulp.dest('rev'))
 )
 
 gulp.task('minify', function () {
-	gulp.src('./public/**/*.html')
+	gulp.src(['./public/**/*.html'])
 		.pipe(htmlmin({
 			collapseWhitespace: true,
 			removeComments: true,
@@ -34,5 +39,13 @@ gulp.task('minify', function () {
 			minifyJS: true
 		}))
 		.pipe(minifyInline())
+		.pipe(gulp.dest('./public'))
+});
+
+gulp.task('collect', function () {
+	return gulp.src(['rev/**/*.json', './public/**/*.html'])
+		.pipe(collect({
+			replaceReved: true,
+		}))
 		.pipe(gulp.dest('./public'))
 });

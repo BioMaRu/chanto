@@ -5,15 +5,9 @@ dev:
 style-dev:
 	gulp build-dev
 
-style-prod:
-	gulp build-prod
-
-minify:
-	rm -rf dist
-	gulp minify
-
 deploy:
 	hugo
 	gulp build-prod
-	make minify
+	gulp minify
+	gulp collect
 	firebase deploy
