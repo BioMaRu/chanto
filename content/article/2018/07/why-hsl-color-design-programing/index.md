@@ -1,10 +1,14 @@
 ---
-title: "ชีวิตง่ายขึ้นด้วยระบบสีแบบ HSL ใน CSS"
-description: "กหฟน่าสว"
-pageTitle: "If you are a web developer you are probably accustomed to colours which look like this | chanto.io"
-thumbnailImgUrl: "thumbnail.jpg"
-coverImgUrl: "cover.jpg"
+title: "ทำชีวิตให้ง่ายขึ้น ด้วยระบบสี HSL Color"
+pageTitle: "ทำชีวิตให้ง่ายขึ้น ด้วยระบบสี HSL Color"
+
+description: "ในการทำงานของ Web Designer และ Frontend Developer แทบทุกคน คงหนีไม่พ้น ที่จะต้องทำงานเกี่ยวข้องกับเรื่องของ สี อย่างแน่นอน..."
+
+thumbnailImageName: "thumbnail"
+coverImageName: "cover"
+
 publishDate: "2018-07-14"
+
 slug: "why-hsl-color-design-programing"
 
 # Taxonomies
@@ -12,7 +16,7 @@ categories: ["CSS"]
 tags: ["css", "color", "design"]
 
 # Custom Params
-minRead: "5"
+minRead: "7"
 
 # template name
 type: "article"

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="624" height="408" viewBox="0 0 624 408">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="624" height="408" fill="#FFF"/>
+    <rect width="624" height="63" fill="#0E5B78"/>
+    <rect width="163" height="32" x="436" y="15" fill="#023752" rx="5"/>
+    <rect width="104" height="345" y="63" fill="#5DB1C5"/>
+    <text fill="#023752" font-family="Arimo-Bold, Arimo" font-size="24" font-weight="bold">
+      <tspan x="128" y="108">LOREM IPSUM</tspan>
+    </text>
+    <rect width="243" height="16" x="128" y="131" fill="#93A4AB" rx="4"/>
+    <rect width="43" height="16" x="549" y="131" fill="#93A4AB" rx="4"/>
+    <rect width="464" height="16" x="128" y="188" fill="#E4EBEE" rx="4"/>
+    <rect width="464" height="16" x="128" y="220" fill="#E4EBEE" rx="4"/>
+    <rect width="464" height="16" x="128" y="252" fill="#E4EBEE" rx="4"/>
+    <rect width="326" height="16" x="128" y="283" fill="#E4EBEE" rx="4"/>
+  </g>
+</svg>

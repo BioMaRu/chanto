@@ -66,8 +66,9 @@
 	<i class="js-floating-shape far fa-diamond _fs-4"></i>
 </div>
 
-<script src="https://unpkg.com/popmotion@8.3.3/dist/popmotion.global.min.js"></script>
+<script src="https://unpkg.com/popmotion@8.3.3/dist/popmotion.global.min.js" defer></script>
 <script>
+document.addEventListener('DOMContentLoaded', function () {
 	const windowWidth = window.innerWidth;
 	const shapesContainer = document.querySelector('.js-floating-shapes-container');
 	const shapesStyler = Array
@@ -125,4 +126,5 @@
 			elapsed: alphaElapsedB
 		}).start(styler.set);
 	})
+})
 </script>

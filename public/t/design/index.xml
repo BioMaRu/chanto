@@ -12,14 +12,14 @@
     
     
     <item>
-      <title>ชีวิตง่ายขึ้นด้วยระบบสีแบบ HSL ใน CSS</title>
+      <title>ทำชีวิตให้ง่ายขึ้น ด้วยระบบสี HSL Color</title>
       <link>https://chanto.io/2018/07/why-hsl-color-design-programing/</link>
       <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://chanto.io/2018/07/why-hsl-color-design-programing/</guid>
-      <description> Web Designer และ Frontend Developer แทบทุกคน คงหนีไม่พ้นที่จะต้องทำงานเกี่ยวข้องกับเรื่องของ &amp;ldquo;สี&amp;rdquo; อย่างแน่นอน ซึ่งใน CSS Color โดยทั่วไปนั้น จะใช้รูปแบบเป็น RGB Color ในรูปของ rgb() หรือ HEX–Notation
-ในบทความนี้ จะมาพูดถึงรูปแบบของสีใน CSS Color อีกรูปแบบหนึ่ง นั่นคือ HSL Color ซึ่งมีข้อดูข้อเสีย และช่วยให้ชีวิตเราง่ายขึ้นได้อย่างไรนั้น ผมจะเล่าให้ฟังครับ
-Color Space -- RGB Color ไม่ดียังไง </description>
+      <description>ในการทำงานของ Web Designer และ Frontend Developer แทบทุกคน คงหนีไม่พ้นที่จะต้องทำงานเกี่ยวข้องกับเรื่องของ &amp;ldquo;สี&amp;rdquo; อย่างแน่นอน ซึ่งใน CSS Color โดยทั่วไปนั้น เราก็มักจะเห็นการใช้งานในรูปแบบของ RGB Color (Red Green Blue) ซะเป็นส่วนใหญ่ เช่น rgb(100, 50, 200), rgba()
+ในบทความนี้ จะมาพูดถึงรูปแบบของสี อีกรูปแบบหนึ่ง นั่นคือ HSL Color (Hue Saturation Lightness) ซึ่งมีข้อดูข้อเสีย และช่วยให้ชีวิตเราง่ายขึ้นได้อย่างไรนั้น ผมจะเล่าให้ฟังครับ แต่ก่อนอื่น เรามาทำความรู้จักกับ ระบบสี RGB Color คร่าว ๆ กันก่อนครับ
+Color Space -- RGB Color: ระบบสียอดนิยม จากการผสมกันของแม่สีทั้งสาม ระบบสีแบบ RGB Color เป็นระบบสีที่ใช้งานได้ค่อนข้างสะดวก นั่นก็เพราะว่าเพราะเครื่องมือ และ Library ต่าง ๆ ในงาน Programing และงาน Design มักจะใช้เป็นระบบสี RGB Color เป็นหลัก</description>
     </item>
     
   </channel>

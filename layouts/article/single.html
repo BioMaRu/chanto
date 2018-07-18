@@ -107,11 +107,11 @@
 		{{ .Title }}
 	</h1>
 
-	<img
-		src="{{.Params.coverImgUrl}}"
-		alt="Cover Image"
-		class="_w-100pct _mgt-32px _ojf-cv"
-		style="max-width: 1000px; max-height: 400px;">
+	<picture class="_mgt-32px">
+		<source srcset="{{.Params.coverImageName}}@2x.webp 2x, {{.Params.coverImageName}}.webp 1x">
+		<source srcset="{{.Params.coverImageName}}@2x.jpg 2x, {{.Params.coverImageName}}.jpg 1x">
+		<img src="{{.Params.coverImageName}}.jpg" alt="Cover Image" class="_w-100pct _ojf-cv" style="max-width: 1000px; max-height: 400px;">
+	</picture>
 
 	<article class="article-container _mgt-24px _cl-dark">
 		{{ .Content }}
