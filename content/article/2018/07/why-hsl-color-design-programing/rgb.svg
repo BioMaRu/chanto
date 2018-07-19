@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="316" height="300" viewBox="0 0 316 300">
-  <g fill="none" fill-rule="evenodd">
-    <circle cx="100" cy="100" r="100" fill="#F00" style="mix-blend-mode:screen"/>
-    <circle cx="216" cy="100" r="100" fill="#0F0" style="mix-blend-mode:screen"/>
-    <circle cx="159" cy="200" r="100" fill="#00F" style="mix-blend-mode:screen"/>
-  </g>
-</svg>

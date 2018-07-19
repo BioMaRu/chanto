@@ -1,8 +1,8 @@
 ---
-title: "ทำชีวิตให้ง่ายขึ้น ด้วยระบบสี HSL Color"
-pageTitle: "ทำชีวิตให้ง่ายขึ้น ด้วยระบบสี HSL Color"
+title: "ชีวิตให้ง่ายขึ้น ด้วย HSL Color ระบบสี ที่เป็นมิตรกับมนุษย์"
+pageTitle: "ชีวิตให้ง่ายขึ้น ด้วย HSL Color ระบบสี ที่เป็นมิตรกับมนุษย์"
 
-description: "ในการทำงานของ Web Designer และ Frontend Developer แทบทุกคน คงหนีไม่พ้น ที่จะต้องทำงานเกี่ยวข้องกับเรื่องของ สี อย่างแน่นอน..."
+description: "ใครที่เป็น Web Designer หรือ Frontend Developer คงหนีไม่พ้น ที่จะต้องทำงานที่เกี่ยวข้องกับเรื่องของ “สี” อย่างแน่นอน ซึ่งใน CSS ก็รองรับการใช้งานสี ในรูปแบบต่าง ๆ ซึ่งรูปแบบที่เป็นที่นิยมที่สุดคือ RGB Color..."
 
 thumbnailImageName: "thumbnail"
 coverImageName: "cover"
@@ -22,57 +22,104 @@ minRead: "7"
 type: "article"
 ---
 
-ในการทำงานของ Web Designer และ Frontend Developer แทบทุกคน คงหนีไม่พ้นที่จะต้องทำงานเกี่ยวข้องกับเรื่องของ "สี" อย่างแน่นอน ซึ่งใน CSS นั้น เราก็มักจะเห็นการใช้งาน ในรูปแบบของ RGB Color (Red Green Blue) เป็นส่วนใหญ่
+Web Designer และ Frontend Developer ทุกคน คงหนีไม่พ้น ที่จะต้องทำงานที่เกี่ยวข้องกับเรื่องของ “สี” อย่างแน่นอน ซึ่งใน CSS ก็รองรับการใช้งานสี ในรูปแบบต่าง ๆ แต่รูปแบบที่เป็นที่นิยมที่สุดคือ RGB Color (Red, Green, Blue) ในรูปแบบของ function rgb(), rgba() และ HEX notation
 
-ในบทความนี้ จะมาพูดถึงรูปแบบของสี อีกรูปแบบหนึ่ง นั่นคือ HSL Color (Hue Saturation Lightness) ซึ่งมีข้อดูข้อเสีย และช่วยให้ชีวิตเราง่ายขึ้นได้อย่างไรนั้น ผมจะเล่าให้ฟังครับ แต่ก่อนอื่น เรามาทำความรู้จักกับ ระบบสี RGB Color คร่าว ๆ กันก่อนครับ
+ในบทความนี้ จะมาพูดถึงรูปแบบของสี อีกรูปแบบหนึ่ง นั่นคือ HSL Color (Hue, Saturation, Lightness) ซึ่งจะมีข้อดีข้อเสีย และช่วยให้เราทำงานง่ายขึ้นได้อย่างไรนั้น ผมจะเล่าให้ฟังครับ แต่ก่อนอื่น เรามาทำความรู้จักกับระบบสี RGB Color กันก่อนครับ
 
-## RGB Color: ระบบสียอดนิยม จากการผสมกันของแม่สีทั้งสาม
+## RGB Color สีจากการผสมแม่สี
 
-ระบบสีแบบ RGB Color เป็นระบบสีที่ใช้งานได้ค่อนข้างสะดวก นั่นก็เพราะว่าเพราะเครื่องมือ และ Library ต่าง ๆ ในงาน Programing และงาน Design มักจะใช้เป็นระบบสี RGB Color เป็นหลัก
+ระบบสีแบบ RGB Color เป็นระบบสีที่ใช้งานได้สะดวก เพราะว่า Tool และ Library ต่าง ๆ ในงาน Programing และงาน Design มักจะใช้ระบบสี RGB Color เป็นมาตรฐานอยู่แล้ว
 
-ใน CSS เราสามารถกำหนดค่าของ RGB Color ได้สองแบบคือ
+โดยใน CSS เราสามารถกำหนดค่าของ RGB Color ได้สองแบบคือ
 
-1. **RGB functions:** rgb(R, G, B) โดยค่าของแม่สี R, G และ B มีค่าสูงสุด 256 ระดับ ตั้งแต่ 0 ถึง 255 เช่น
+1. **RGB function** – ```rgb(Red, Green, Blue)``` ค่าของ Red, Green และ Blue จะมีค่าสูงสุด 256 ระดับ ตั้งแต่ 0 ถึง 255 เช่น
 
 	- <span class="_w-16px _h-16px _dp-ilb _bdrd-32px" style="background: rgb(255, 0, 0)"></span> rgb(255, 0, 0)
 	- <span class="_w-16px _h-16px _dp-ilb _bdrd-32px" style="background: rgb(100, 0, 100)"></span> rgb(100, 0, 100)
 	- <span class="_w-16px _h-16px _dp-ilb _bdrd-32px" style="background: rgb(0, 0, 0)"></span> rgb(0, 0, 0)
 	- <span class="_w-16px _h-16px _dp-ilb _bdrd-32px _bdw-1px _bdcl-gray" style="background: rgb(255, 255, 255)"></span> rgb(255, 255, 255)
-2. **RGB Hex notation:** #RRGGBB โดยค่าของแม่สี R, G และ B มีค่าสูงสุด 256 ตั้งแต่ 00 ถึง FF เช่น
+2. **Hex notation** – ```#RRGGBB``` ค่าของ Red, Green และ Blue มีค่าสูงสุด 256 ตั้งแต่ 00 ถึง FF เช่น
 
 	- <span class="_w-16px _h-16px _dp-ilb _bdrd-32px" style="background: #ff0000"></span> #ff0000
 	- <span class="_w-16px _h-16px _dp-ilb _bdrd-32px" style="background: #640064"></span> #640064
 	- <span class="_w-16px _h-16px _dp-ilb _bdrd-32px" style="background: #000000"></span> #000000
 	- <span class="_w-16px _h-16px _dp-ilb _bdrd-32px _bdw-1px _bdcl-gray" style="background: #FFFFFF"></span> #FFFFFF
 
+### การเลือกสี ให้ได้สีที่เราต้องการ
+
+การเลือกสีในรูปแบบของ RGB Color คือการเอาสี **Red**, **Green** และ **Blue** ที่ค่าต่าง ๆ มาผสมกัน จนได้สีที่เราต้องการ เพื่อน ๆ อาจจะสงสัยว่า ทำไมเอาสีมาผสมกันถึงได้เป็นสีขาว ไม่กลายเป็นสีดำเหมือนการเอาน้ำ หรือสีโปสเตอร์ มาผสมกัน ?
+
+นั่นก็เพราะว่า RBG Color เป็นการผสมกันของสีแสง ซึ่งมีการผสมสีแบบ **Additive** (บวกกัน) ก็คือยิ่งเอาสีมาบวกกัน ก็จะยิ่งกลายเป็น rgb(255, 255, 255) หรือสีขาว ให้เรามองเห็น
+
+ซึ่งจะมีความแตกต่าง จากการผสมสีทางเคมี ที่เราคุ้นเคยในชีวิตประจำวัน เช่นงานพิมพ์ งานย้อมสี ที่เป็นการผสมแบบ **Subtractive** (ลบกัน) ซึ่งก็คือกระบวนการ ดูดซับ Spectrum สี ของแสงก่อนที่จะสะท้อนเข้าตาเรานั่นเองครับ
+
 <p class="_tal-ct">
-	<img src="rgb.svg" alt="RGB Color" class="_mxw-256px">
-	<em>ภาพการผสมกันของแม่สี</em>
+	<picture class="_mgt-32px">
+		<source srcset="rgb-addition@2x.webp 2x, rgb-addition.webp 1x" type="image/webp">
+		<source srcset="rgb-addition@2x.jpg 2x, rgb-addition.jpg 1x" type="image/jpeg">
+		<img
+			srcset="rgb-addition@2x.jpg 2x, rgb-addition.jpg 1x"
+			src="rgb-addition.jpg"
+			alt="RGB Color addition"
+			class="_mxw-256px"
+		>
+		<em>การผสมสีแบบ Additive</em>
+	</picture>
 </p>
 
-การผสมสีของแม่สีในระบบ RGB Color **แดง**, **เขียว** และ **น้ำเงิน** หลายคนอาจจะสงสัยว่า ทำไมเอาสีมาผสมกันถึงได้เป็นสีขาว ไม่กลายเป็นสีดำ เหมือนเวลาที่เราเอาสีน้ำมาผสมกัน ? นั่นก็เพราะว่า การผสมกันของสีแสง เป็นการผสมสีแบบ **Addition** (บวก) แต่สีในทางเคมีเป็นการผสมแบบ **Subtraction** (ลบ)
+## ข้อเสียของ RGB Color
 
-นั่นก็คือ สีในรูปของแสงนั้น ยิ่งเราเอาสีมาผสมกันมากเท่าไร ผลลัพธ์ก็จะยิ่งเข้าใกล้สีขาว rgb(255, 255, 255) มากขึ้นเท่านั้นครับ
+RGB Color มีข้อเสียอยู่อย่างหนึ่งคือ เป็นระบบสีที่ใช้สำหรับคอมพิวเตอร์ แต่มนุษย์เข้าใจได้ยาก
 
-## จุดด้อยของ RGB
-RGB Color มีจุดด้อยอยู่อย่างหนึ่งคือ เป็นระบบสีที่เหมาะกับคอมพิวเตอร์ แต่มนุษย์เข้าใจได้ยาก ซึ่งในงานจริง การจัดการเรื่องสี มีความสำคัญ และซับซ้อนมาก โดยเฉพาะในการทำเว็บสมัยใหม่ ที่มี Design Systems ที่ต้องดูแล มักจะประกอบสีหลาย ๆ แบบ เช่น Primary Color, Accent Color, Semantic Color หลาย ๆ แบบ หลาย ๆ ระดับ
+ในงานจริงนั้น การจัดการเรื่องสี มีความสำคัญ และซับซ้อนมาก โดยเฉพาะในการทำเว็บสมัยใหม่ ที่มีการออกแบบอย่างเป็นระบบ มีการสร้าง Color Palette ใน Design Systems ที่ต้องการการดูแล ซึ่งก็มักจะประกอบด้วยสีจำนวนมาก เช่น Primary Color, Accent Color, Semantic Color หลาย ๆ แบบ และหลาย ๆ ระดับ ความเข้ม แค่คิดก็เหนื่อยแล้วครับ
 
-มนุษย์เรา จะอ้างอิงถึงสีใด ๆ ก็จะใช้คำพูด ประมาณว่า:
+<p class="_tal-ct">
+	<picture class="_mgt-32px">
+		<source srcset="palette-systems@2x.webp 2x, palette-systems.webp 1x" type="image/webp">
+		<source srcset="palette-systems@2x.jpg 2x, palette-systems.jpg 1x" type="image/jpeg">
+		<img
+			srcset="palette-systems@2x.jpg 2x, palette-systems.jpg 1x"
+			src="palette-systems.jpg"
+			alt="RGB Color addition"
+		>
+		<em>ส่วนหนึ่งของ Color Palette ใน Design Systems</em>
+	</picture>
+</p>
+
+#### เพราะเราคือมนุษย์
+
+*เพิ่มแดงอีกซัก 16, เขียวอีก 20 มันจะได้สว่างกว่านี้หน่อย...*, *ตรงนี้มันออกแดงไปนิด ลดสีแดงลง 30 แต่จะให้สีโทนเดิม ต้องเพิ่มน้ำเงินขึ้นอีก 16 ด้วยนะ...*
+
+ฟังดูไม่ค่อยคุ้นหูใช่ไหมครับ งั้นถ้าเป็นแบบนี้ล่ะ
 
 - เอาสีนี้ แต่ขอสว่างกว่านี้อีกนิด
-- ลดความสดของสีนี้ลงมานิดนึง
-- เอาโทนประมาณนี้ แต่ลองเปลี่ยนเป็นสีแดงได้ไหม ?
+- ตรงนี้สดไปหน่อย เอาสว่างเท่านี้ลดความสดลงมาหน่อย
+- เอาโทนประมาณนี้ แต่ลองเปลี่ยนเป็นสีแดงดู
 
-เราคงผสมสีเองในหัวไม่ได้แน่ ๆ เอาแค่ว่า #fe2315 กับ #e43152 คือสีอะไร และต่างกันอย่างไร ก็เห็นภาพยากแล้วใช่ไหมครับ แล้วลองคิดภาพดูว่า ถ้าสีใน Design Systems เราใช้เป็น RGB Color ทั้งหมด เวลาเราดูแล หรือปรับเปลี่ยนอะไรจะยุ่งยากแค่ไหน
+ใช่ครับโลกความเป็นจริง เราสื่อสารกันแบบนี้ เราคงไม่สร้าง Mental Model ในการผสมสีในหัวตลอดแน่ ๆ เอาแค่ว่า ```#fe2315``` กับ ```#e43152``` คือสีอะไร และต่างกันอย่างไร ก็ยากแล้วใช่ไหมครับ แล้วถ้าสีใน Design Systems เราใช้เป็น RGB Color ทั้งหมด การสื่อสาร การดูแล หรือปรับเปลี่ยนอะไรจะยุ่งยากแค่ไหน
 
-## HSL Color: ระบบสีที่เป็นมิตรกับมนุษย์
-ระบบสีแบบ HSL Color เป็นระบบสีที่มนุษย์จัดการได้ง่าย ต่างจาก RGB Color คือ เป็นระบบสี ที่ไม่ได้สร้างด้วยการผสมสีของแม่สี แต่เป็นระบบสีที่ประกอบจาก Hue (เนื้อสี), Saturation (ความอิ่ม) และ Lightness (ความสว่าง)
+## HSL Color ระบบสีที่เป็นมิตรกับมนุษย์มากกว่า
 
-ใน CSS ใช้งาน HSL Color ได้ในรูปแบบของ function hsl() และ hsla() เช่น
+HSL Color เป็นระบบสีที่มนุษย์ เข้าใจได้ง่าย เพราะไม่ได้นิยามสีจากการผสมสี แต่เป็นระบบที่สร้างสีขึ้นมาจาก Hue (เนื้อสี), Saturation (ความอิ่ม) และ Lightness (ความสว่าง)
+
+CSS ใช้งาน HSL Color ได้ในรูปแบบของ function hsl(Hue, Saturation, Lightness) เช่น
 
 - <span class="_w-16px _h-16px _dp-ilb _bdrd-32px" style="background: hsl(0, 100%, 50%)"></span> hsl(0, 100%, 50%)
 - <span class="_w-16px _h-16px _dp-ilb _bdrd-32px" style="background: hsl(120, 100%, 50%)"></span> hsl(120, 100%, 50%)
 - <span class="_w-16px _h-16px _dp-ilb _bdrd-32px" style="background: hsl(240, 100%, 50%)"></span> hsl(240, 100%, 50%)
+
+<p class="_tal-ct">
+	<picture class="_mgt-32px">
+		<source srcset="hsl-system@2x.webp 2x, hsl-system.webp 1x" type="image/webp">
+		<source srcset="hsl-system@2x.jpg 2x, hsl-system.jpg 1x" type="image/jpeg">
+		<img
+			srcset="hsl-system@2x.jpg 2x, hsl-system.jpg 1x"
+			src="hsl-system.jpg"
+			alt="RGB Color addition"
+		>
+		<em>ส่วนหนึ่งของ Color Palette ใน Design Systems</em>
+	</picture>
+</p>
 
 ### Hue
 Hue คือเนื้อสี มีค่าได้ 360 ค่า ตั้งแต่ 0 ถึง 359
@@ -82,7 +129,7 @@ Hue คือเนื้อสี มีค่าได้ 360 ค่า ตั
 นั้นก็เพราะว่า Hue ใช้การกำหนดค่าในรูปแบบของ Color Wheel โดยแต่ละค่าของ Hue ก็คือแต่ละ Degree บน Color Wheel นั่นเอง นั่นหมายความว่า ถ้าเรากำหนดค่า Hue เป็น 0, 360 หรือ 720 ก็จะได้เนื้อสีเดียวกันครับ
 
 <p class="_tal-ct">
-	<img src="hue.svg" alt="Hue Color Wheel" class="_mxw-256px" style="hsl(260, 100%, 50%)">
+	<img src="hue.svg" alt="Hue Color Wheel" class="_mxw-512px">
 	<em>Hue color wheel</em>
 </p>
 
@@ -118,8 +165,17 @@ Lightness คือความสว่างของสี มีหน่ว
 - <span class="_w-16px _h-16px _dp-ilb _bdrd-32px" style="background: hsl(240, 100%, 0%)"></span> hsl(240, 100%, 0%)
 
 <p class="_tal-ct">
-	<img src="hsl.jpg" alt="Hue Color Wheel" class="_mxw-512px" style="hsl(260, 100%, 50%)">
-	<em>HSL Cylinder</em>
+	<picture class="_mgt-32px">
+		<source srcset="hsl-cylinder@2x.webp 2x, hsl-cylinder.webp 1x" type="image/webp">
+		<source srcset="hsl-cylinder@2x.jpg 2x, hsl-cylinder.jpg 1x" type="image/jpeg">
+		<img
+			srcset="hsl-cylinder@2x.jpg 2x, hsl-cylinder.jpg 1x"
+			src="hsl-cylinder.jpg"
+			alt="RGB Color addition"
+			class="_mxw-512px"
+		>
+		<em>HSL Cylinder</em>
+	</picture>
 </p>
 
 ## การใช้งาน HSL Color
@@ -148,8 +204,13 @@ Lightness คือความสว่างของสี มีหน่ว
 สร้าง Pallet สีให้มีอารมณ์คล้าย ๆ กัน ไม่รู้สึกหลุดไปจากกลุ่ม ด้วยการ ปรับ Saturation และ Lightness ของทุกสีให้เท่ากัน
 
 <p class="_tal-ct">
-	<img src="palette.jpg" alt="Gradient Example" class="_mxw-512px">
-	<em>Palette ของสีที่มี Saturation และ Lightness เท่ากัน</em>
+	<img
+		srcset="color-palette@2x.jpg 2x, color-palette.jpg 1x"
+		src="color-palette.jpg"
+		alt="RGB Color addition"
+		class="_mxw-512px"
+	>
+	<em>Color Palette ของสีที่มี Saturation และ Lightness เท่ากัน</em>
 </p>
 
 ### เลือกสีให้ State ต่าง ๆ ของ Button

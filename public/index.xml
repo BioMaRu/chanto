@@ -12,16 +12,15 @@
     
     
     <item>
-      <title>ทำชีวิตให้ง่ายขึ้น ด้วยระบบสี HSL Color</title>
+      <title>ชีวิตให้ง่ายขึ้น ด้วย HSL Color ระบบสี ที่เป็นมิตรกับมนุษย์</title>
       <link>https://chanto.io/2018/07/why-hsl-color-design-programing/</link>
       <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://chanto.io/2018/07/why-hsl-color-design-programing/</guid>
-      <description>ในการทำงานของ Web Designer และ Frontend Developer แทบทุกคน คงหนีไม่พ้นที่จะต้องทำงานเกี่ยวข้องกับเรื่องของ &amp;ldquo;สี&amp;rdquo; อย่างแน่นอน ซึ่งใน CSS นั้น เราก็มักจะเห็นการใช้งาน ในรูปแบบของ RGB Color (Red Green Blue) เป็นส่วนใหญ่
-ในบทความนี้ จะมาพูดถึงรูปแบบของสี อีกรูปแบบหนึ่ง นั่นคือ HSL Color (Hue Saturation Lightness) ซึ่งมีข้อดูข้อเสีย และช่วยให้ชีวิตเราง่ายขึ้นได้อย่างไรนั้น ผมจะเล่าให้ฟังครับ แต่ก่อนอื่น เรามาทำความรู้จักกับ ระบบสี RGB Color คร่าว ๆ กันก่อนครับ
-RGB Color: ระบบสียอดนิยม จากการผสมกันของแม่สีทั้งสาม ระบบสีแบบ RGB Color เป็นระบบสีที่ใช้งานได้ค่อนข้างสะดวก นั่นก็เพราะว่าเพราะเครื่องมือ และ Library ต่าง ๆ ในงาน Programing และงาน Design มักจะใช้เป็นระบบสี RGB Color เป็นหลัก
-ใน CSS เราสามารถกำหนดค่าของ RGB Color ได้สองแบบคือ
- RGB functions: rgb(R, G, B) โดยค่าของแม่สี R, G และ B มีค่าสูงสุด 256 ระดับ ตั้งแต่ 0 ถึง 255 เช่น</description>
+      <description>Web Designer และ Frontend Developer ทุกคน คงหนีไม่พ้น ที่จะต้องทำงานที่เกี่ยวข้องกับเรื่องของ “สี” อย่างแน่นอน ซึ่งใน CSS ก็รองรับการใช้งานสี ในรูปแบบต่าง ๆ แต่รูปแบบที่เป็นที่นิยมที่สุดคือ RGB Color (Red, Green, Blue) ในรูปแบบของ function rgb(), rgba() และ HEX notation
+ในบทความนี้ จะมาพูดถึงรูปแบบของสี อีกรูปแบบหนึ่ง นั่นคือ HSL Color (Hue, Saturation, Lightness) ซึ่งจะมีข้อดีข้อเสีย และช่วยให้เราทำงานง่ายขึ้นได้อย่างไรนั้น ผมจะเล่าให้ฟังครับ แต่ก่อนอื่น เรามาทำความรู้จักกับระบบสี RGB Color กันก่อนครับ
+RGB Color สีจากการผสมแม่สี ระบบสีแบบ RGB Color เป็นระบบสีที่ใช้งานได้สะดวก เพราะว่า Tool และ Library ต่าง ๆ ในงาน Programing และงาน Design มักจะใช้ระบบสี RGB Color เป็นมาตรฐานอยู่แล้ว
+โดยใน CSS เราสามารถกำหนดค่าของ RGB Color ได้สองแบบคือ</description>
     </item>
     
   </channel>
