@@ -1,6 +1,7 @@
 baseURL = "https://chanto.io/"
 languageCode = "en-us"
-title = "Chanto"
+title = "chanto"
+enableRobotsTXT = true
 
 [params]
 	AuthorName = "BioMaRu"

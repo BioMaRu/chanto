@@ -306,9 +306,9 @@ beeper@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/beeper/-/beeper-1.1.1.tgz#e6d5ea8c5dad001304a70b22638447f69cb2f809"
 
-biomatic@=0.2.6:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/biomatic/-/biomatic-0.2.6.tgz#1d555bfd1d4b29e5594b6e98206d768f2a1c8323"
+biomatic@=0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/biomatic/-/biomatic-0.2.7.tgz#4aa892f4d7e7409a7ffa88a9236108dd2fbdaa89"
 
 block-stream@*:
   version "0.0.9"

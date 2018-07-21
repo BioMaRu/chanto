@@ -2,17 +2,14 @@
 <div>
 	<div class="_pdv-32px">
 		<div class="lo-container">
-			<div class="lo-12 _gg-32px">
-				<div>
-					<p class="_fs-4 _bdbtw-1px _pdbt-8px _bdcl-neutral-300 _cl-black _mgbt-24px _ttf-upc">
-						{{.Data.Term}}
-					</p>
-					<div class="lo-12 lo-6-sm lo-4-md _gg-32px _w-100pct">
-					{{range $i, $post := .Data.Pages.ByPublishDate}}
-						{{partial "components/card-post.html" $post}}
-					{{end}}
-					</div>
-				</div>
+			<p class="_fs-4 _ffml-secondary _fw-500 _bdbtw-1px _pdbt-8px _bdcl-neutral-100 _ttf-upc">
+				{{.Data.Term}}
+			</p>
+
+			<div class="lo-12 lo-6-sm lo-4-md _gg-32px _w-100pct _mgt-24px">
+			{{range $i, $post := .Data.Pages.ByPublishDate}}
+				{{partial "components/card-post.html" $post}}
+			{{end}}
 			</div>
 		</div>
 	</div>

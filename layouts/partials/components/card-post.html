@@ -1,7 +1,7 @@
 <div>
 	<a href="{{.Permalink}}">
 		<picture class="_mgt-32px">
-			<source srcset="{{.Permalink}}{{.Params.thumbnailImageName}}@2x.webp 2x, {{.Permalink}}{{.Params.thumbnailImageName}}.webp 1x" type="image/webp">
+			<!-- <source srcset="{{.Permalink}}{{.Params.thumbnailImageName}}@2x.webp 2x, {{.Permalink}}{{.Params.thumbnailImageName}}.webp 1x" type="image/webp"> -->
 			<source srcset="{{.Permalink}}{{.Params.thumbnailImageName}}@2x.jpg 2x, {{.Permalink}}{{.Params.thumbnailImageName}}.jpg 1x" type="image/jpeg">
 			<img
 				src="{{.Permalink}}{{.Params.thumbnailImageName}}.jpg"
@@ -13,7 +13,7 @@
 	</a>
 
 	<div class="_pdv-16px lo-12 _gg-12px">
-		<div class="_dp-f _jtfct-spbtw _fs-7">
+		<div class="_dp-f _jtfct-spbtw _fs-6">
 			{{ range .Params.categories }}
 			<a href="{{ "/c/" | relLangURL }}{{ . | urlize }}">
 				<strong class="_cl-primary _ttf-upc">

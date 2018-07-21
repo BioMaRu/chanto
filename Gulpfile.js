@@ -3,10 +3,8 @@ const sass = require('gulp-sass')
 const htmlmin = require('gulp-htmlmin')
 const minifyInline = require('gulp-minify-inline')
 const purgecss = require('gulp-purgecss')
-const filenames = require('gulp-filenames')
 const rev = require('gulp-rev')
 const collect = require('gulp-rev-collector')
-const revdel = require('gulp-rev-del')
 
 const sassOption = {
 	outputStyle: 'compressed',

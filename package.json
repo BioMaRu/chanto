@@ -6,7 +6,7 @@
 		"style-prod": "gulp build-prod"
 	},
 	"dependencies": {
-		"biomatic": "=0.2.6"
+		"biomatic": "=0.2.7"
 	},
 	"devDependencies": {
 		"gulp": "=3.9.1",
