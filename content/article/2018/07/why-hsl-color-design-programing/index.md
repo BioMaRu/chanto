@@ -2,7 +2,7 @@
 title: "ชีวิตง่ายขึ้น ด้วย HSL Color ระบบสี ที่เป็นมิตรกับมนุษย์"
 pageTitle: "ชีวิตง่ายขึ้น ด้วย HSL Color ระบบสี ที่เป็นมิตรกับมนุษย์"
 
-description: "Web Designer และ Frontend Developer ทุกคน คงหนีไม่พ้น ที่จะต้องทำงานที่เกี่ยวข้องกับเรื่องของ “สี” อย่างแน่นอน ซึ่งใน CSS ก็รองรับการใช้งานสี ในรูปแบบต่าง ๆ แต่รูปแบบที่เป็นที่นิยมที่สุดคือ RGB Color."
+description: "Web Designer และ Frontend Developer ทุกคน คงหนีไม่พ้น ที่จะต้องทำงานที่เกี่ยวข้องกับเรื่องของ “สี” อย่างแน่นอน ซึ่งใน CSS ก็รองรับการใช้งานสี ในรูปแบบต่าง ๆ แต่รูปแบบที่เป็นที่นิยมที่สุดคือ RGB Color..."
 
 thumbnailImageName: "thumbnail"
 coverImageName: "cover"

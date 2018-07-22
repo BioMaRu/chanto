@@ -2,6 +2,7 @@ baseURL = "https://chanto.io/"
 languageCode = "en-us"
 title = "chanto"
 enableRobotsTXT = true
+disableHugoGeneratorInject = true
 
 [params]
 	AuthorName = "BioMaRu"
