@@ -7,7 +7,7 @@ description: "ในปัจจุบัน Performance หรือควา�
 thumbnailImageName: "thumbnail"
 coverImageName: "cover"
 
-publishDate: "2018-07-20"
+publishDate: "2018-07-22"
 draft: false
 
 slug: "how-to-optimize-your-website"
@@ -41,8 +41,8 @@ type: "article"
 
 เครื่องมือวัดผลแบบฟรี ที่แนะนำก็จะมี
 
-- <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" class="bio-link -fancy" rel="noopener">**Lighthouse**</a>
-- <a href="https://gtmetrix.com" target="_blank" class="bio-link -fancy" rel="noopener">**GTMetrix**</a>
+- <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" class="bio-link -fancy" rel="noopener">Lighthouse</a>
+- <a href="https://gtmetrix.com" target="_blank" class="bio-link -fancy" rel="noopener">GTMetrix</a>
 
 ผมค่อนข้างชอบ GTMetrix มากกว่า เนื่องจากคเจาะลึกในรายละเอียดมากกว่าครับ
 
