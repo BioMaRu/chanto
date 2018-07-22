@@ -57,7 +57,7 @@ type: "article"
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="minify@2x.webp 2x, minify.webp 1x" type="image/webp"> -->
-		<!-- <source srcset="minify@2x.png 2x, minify.png 1x" type="image/jpeg"> -->
+		<!-- <source srcset="minify@2x.png 2x, minify.png 1x" type="image/png"> -->
 		<img
 			srcset="minify@2x.png 2x, minify.png 1x"
 			src="minify.png"
@@ -95,7 +95,7 @@ File type ทั่วไปที่ถูกใช้งานบ่อยค�
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="imageOptim@2x.webp 2x, imageOptim.webp 1x" type="image/webp"> -->
-		<source srcset="imageOptim@2x.jpg 2x, imageOptim.jpg 1x" type="image/jpeg">
+		<source srcset="imageOptim@2x.png 2x, imageOptim.png 1x" type="image/png">
 		<img
 			src="imageOptim.png"
 			alt="ImageOptim"
@@ -118,7 +118,7 @@ File type ทั่วไปที่ถูกใช้งานบ่อยค�
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="srcset@2x.webp 2x, srcset.webp 1x" type="image/webp"> -->
-		<source srcset="srcset@2x.png 2x, srcset.png 1x" type="image/jpeg">
+		<source srcset="srcset@2x.png 2x, srcset.png 1x" type="image/png">
 		<img
 			src="srcset.png"
 			alt="srcset"
@@ -145,7 +145,7 @@ HTML นี้จะเป็นการบอก Browser ว่า
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="divitis@2x.webp 2x, divitis.webp 1x" type="image/webp"> -->
-		<source srcset="divitis@2x.png 2x, divitis.png 1x" type="image/jpeg">
+		<source srcset="divitis@2x.png 2x, divitis.png 1x" type="image/png">
 		<img
 			src="divitis.png"
 			alt="divitis"
@@ -164,7 +164,7 @@ HTML นี้จะเป็นการบอก Browser ว่า
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="bootstrap@2x.webp 2x, bootstrap.webp 1x" type="image/webp"> -->
-		<source srcset="bootstrap@2x.png 2x, bootstrap.png 1x" type="image/jpeg">
+		<source srcset="bootstrap@2x.png 2x, bootstrap.png 1x" type="image/png">
 		<img
 			src="bootstrap.png"
 			alt="bootstrap"
@@ -187,7 +187,7 @@ CSSOM จะถูกนำมารวมกับ DOM เพื่อใช้
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="render-tree@2x.webp 2x, render-tree.webp 1x" type="image/webp"> -->
-		<source srcset="render-tree@2x.png 2x, render-tree.png 1x" type="image/jpeg">
+		<source srcset="render-tree@2x.png 2x, render-tree.png 1x" type="image/png">
 		<img
 			src="render-tree.png"
 			alt="render-tree"
@@ -216,7 +216,7 @@ Resource Hints ใช้เพื่อบอกใบ้ ให้ Browser ใ�
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="preload@2x.webp 2x, preload.webp 1x" type="image/webp"> -->
-		<source srcset="preload@2x.png 2x, preload.png 1x" type="image/jpeg">
+		<source srcset="preload@2x.png 2x, preload.png 1x" type="image/png">
 		<img
 			src="preload.png"
 			alt="preload"
@@ -231,7 +231,7 @@ Resource Hints ใช้เพื่อบอกใบ้ ให้ Browser ใ�
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="dns-prefetch@2x.webp 2x, dns-prefetch.webp 1x" type="image/webp"> -->
-		<source srcset="dns-prefetch@2x.png 2x, dns-prefetch.png 1x" type="image/jpeg">
+		<source srcset="dns-prefetch@2x.png 2x, dns-prefetch.png 1x" type="image/png">
 		<img
 			src="dns-prefetch.png"
 			alt="dns-prefetch"
