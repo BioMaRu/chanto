@@ -27,9 +27,9 @@ type: "article"
 
 มีกรณีศึกษาจากเว็บดัง ๆ มากมาย ที่พูดถึงความสัมพันธ์ของความเร็ว กับผลกระทบที่เกิดขึ้น
 
-- **Amazon** – ทุก 0.1 วินาที ที่โหลด<span class="_cl-negative">ช้าลง</span> ส่งผลให้ยอดขาย<span class="_cl-negative">ลดลง 1%</span> ซึ่งคิดเป็นมูลค่า 1.3 พันล้าน USD ต่อปี
-- **Walmart** – ทุก 1 วินาที ที่โหลด<span class="_cl-positive">เร็วขึ้น</span> ส่งผลให้ Conversion Rate <span class="_cl-positive">เพิ่มขึ้น 2%</span> ซึ่งคิดเป็นมูลค่า 274 ล้าน USD ต่อปี
-- **Yahoo** – ทุก 0.4 วินาที ที่โหลด<span class="_cl-positive">เร็วขึ้น</span> ส่งผลให้ Traffic <span class="_cl-positive">เพิ่มขึ้น 9%</span> ซึ่งคิดเป็น 600 ล้านผู้ใช้งาน ต่อปี
+- **Amazon** – ทุก 0.1 วินาที ที่โหลดช้าลง ส่งผลให้ยอดขายลดลง 1% ซึ่งคิดเป็นมูลค่า 1.3 พันล้าน USD ต่อปี
+- **Walmart** – ทุก 1 วินาที ที่โหลดเร็วขึ้น ส่งผลให้ Conversion Rate เพิ่มขึ้น 2% ซึ่งคิดเป็นมูลค่า 274 ล้าน USD ต่อปี
+- **Yahoo** – ทุก 0.4 วินาที ที่โหลดเร็วขึ้น ส่งผลให้ Traffic เพิ่มขึ้น 9% ซึ่งคิดเป็น 600 ล้านผู้ใช้งาน ต่อปี
 
 โอ้โห ถ้าความเร็ว ส่งผลขนาดนี้ เราก็คงปล่อยให้เว็บเรา ช้ากว่าคู่แข่งไม่ได้แล้วล่ะครับ 😅
 
@@ -94,16 +94,12 @@ File type ทั่วไปที่ถูกใช้งานบ่อยค�
 
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
-		<!-- <source srcset="rgb-addition@2x.webp 2x, rgb-addition.webp 1x" type="image/webp"> -->
-		<!-- <source srcset="rgb-addition@2x.jpg 2x, rgb-addition.jpg 1x" type="image/jpeg"> -->
-		<!-- <img
-			srcset="rgb-addition@2x.jpg 2x, rgb-addition.jpg 1x"
-			src="rgb-addition.jpg"
-			alt="RGB Color addition"
-			class="_mxw-256px"
-		> -->
+		<!-- <source srcset="imageOptim@2x.webp 2x, imageOptim.webp 1x" type="image/webp"> -->
+		<source srcset="imageOptim@2x.jpg 2x, imageOptim.jpg 1x" type="image/jpeg">
 		<img
 			src="imageOptim.png"
+			alt="ImageOptim"
+			class="_w-at _mxw-100pct"
 		>
 		<em>ตัวอย่างการลดขนาดรูปด้วย ImageIptim</em>
 	</picture>
@@ -122,9 +118,8 @@ File type ทั่วไปที่ถูกใช้งานบ่อยค�
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="srcset@2x.webp 2x, srcset.webp 1x" type="image/webp"> -->
-		<!-- <source srcset="srcset@2x.png 2x, srcset.png 1x" type="image/jpeg"> -->
+		<source srcset="srcset@2x.png 2x, srcset.png 1x" type="image/jpeg">
 		<img
-			srcset="srcset@2x.png 2x, srcset.png 1x"
 			src="srcset.png"
 			alt="srcset"
 			class="_w-at _mxw-100pct"
@@ -150,9 +145,8 @@ HTML นี้จะเป็นการบอก Browser ว่า
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="divitis@2x.webp 2x, divitis.webp 1x" type="image/webp"> -->
-		<!-- <source srcset="divitis@2x.png 2x, divitis.png 1x" type="image/jpeg"> -->
+		<source srcset="divitis@2x.png 2x, divitis.png 1x" type="image/jpeg">
 		<img
-			srcset="divitis@2x.png 2x, divitis.png 1x"
 			src="divitis.png"
 			alt="divitis"
 			class="_w-at _mxw-100pct"
@@ -170,9 +164,8 @@ HTML นี้จะเป็นการบอก Browser ว่า
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="bootstrap@2x.webp 2x, bootstrap.webp 1x" type="image/webp"> -->
-		<!-- <source srcset="bootstrap@2x.png 2x, bootstrap.png 1x" type="image/jpeg"> -->
+		<source srcset="bootstrap@2x.png 2x, bootstrap.png 1x" type="image/jpeg">
 		<img
-			srcset="bootstrap@2x.png 2x, bootstrap.png 1x"
 			src="bootstrap.png"
 			alt="bootstrap"
 			class="_w-at _mxw-100pct"
@@ -194,9 +187,8 @@ CSSOM จะถูกนำมารวมกับ DOM เพื่อใช้
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="render-tree@2x.webp 2x, render-tree.webp 1x" type="image/webp"> -->
-		<!-- <source srcset="render-tree@2x.png 2x, render-tree.png 1x" type="image/jpeg"> -->
+		<source srcset="render-tree@2x.png 2x, render-tree.png 1x" type="image/jpeg">
 		<img
-			srcset="render-tree@2x.png 2x, render-tree.png 1x"
 			src="render-tree.png"
 			alt="render-tree"
 			class="_w-at _mxw-100pct"
@@ -224,9 +216,8 @@ Resource Hints ใช้เพื่อบอกใบ้ ให้ Browser ใ�
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="preload@2x.webp 2x, preload.webp 1x" type="image/webp"> -->
-		<!-- <source srcset="preload@2x.png 2x, preload.png 1x" type="image/jpeg"> -->
+		<source srcset="preload@2x.png 2x, preload.png 1x" type="image/jpeg">
 		<img
-			srcset="preload@2x.png 2x, preload.png 1x"
 			src="preload.png"
 			alt="preload"
 			class="_w-at _mxw-100pct"
@@ -240,9 +231,8 @@ Resource Hints ใช้เพื่อบอกใบ้ ให้ Browser ใ�
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
 		<!-- <source srcset="dns-prefetch@2x.webp 2x, dns-prefetch.webp 1x" type="image/webp"> -->
-		<!-- <source srcset="dns-prefetch@2x.png 2x, dns-prefetch.png 1x" type="image/jpeg"> -->
+		<source srcset="dns-prefetch@2x.png 2x, dns-prefetch.png 1x" type="image/jpeg">
 		<img
-			srcset="dns-prefetch@2x.png 2x, dns-prefetch.png 1x"
 			src="dns-prefetch.png"
 			alt="dns-prefetch"
 			class="_w-at _mxw-100pct"
