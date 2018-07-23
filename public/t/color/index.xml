@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Color on chanto</title>
+    <link>https://chanto.io/t/color/</link>
+    <description>Recent content in Color on chanto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://chanto.io/t/color/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ชีวิตง่ายขึ้น ด้วย HSL Color ระบบสี ที่เป็นมิตรกับมนุษย์</title>
+      <link>https://chanto.io/2018/07/why-hsl-color-design-programing/</link>
+      <pubDate>Thu, 19 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chanto.io/2018/07/why-hsl-color-design-programing/</guid>
+      <description>Web Designer และ Frontend Developer ทุกคน คงหนีไม่พ้น ที่จะต้องทำงานที่เกี่ยวข้องกับเรื่องของ “สี” อย่างแน่นอน ซึ่งใน CSS ก็รองรับการใช้งานสี ในรูปแบบต่าง ๆ แต่ที่นิยมที่สุดคือ RGB Color (Red, Green, Blue) ในรูป function rgb(), rgba() และ HEX notation
+ในบทความนี้ ผมจะมาพูดถึงรูปแบบของสี อีกรูปแบบหนึ่ง คือ HSL Color (Hue, Saturation, Lightness) ซึ่งจะมีข้อดีข้อเสีย และช่วยให้เราทำงานง่ายขึ้นได้อย่างไรนั้น ผมจะเล่าให้ฟังครับ แต่ก่อนอื่น เรามาทำความรู้จักกับระบบสี RGB Color กันก่อนครับ
+RGB Color สีจากการผสมแม่สี ระบบสีแบบ RGB Color เป็นระบบสีที่ใช้งานได้สะดวก เพราะว่า Tool และ Library ต่าง ๆ ในงาน Programing และงาน Design มักจะใช้ระบบสี RGB Color เป็นมาตรฐานอยู่แล้ว
+โดยใน CSS เราสามารถกำหนดค่าของ RGB Color ได้สองแบบคือ</description>
+    </item>
+    
+  </channel>
+</rss>
