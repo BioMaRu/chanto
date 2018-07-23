@@ -37,46 +37,49 @@ type: "article"
 
 การทำให้เว็บเร็วขึ้น มีอยู่สองแบบ คือ Optimize **Objective time** (เวลาที่วัดผลเป็นตัวเลขได้) หรือ **Subjective time** (เวลาที่มนุษย์รับรู้, ความรู้สึก)
 
-บทความนี้ จะเป็นมุมมองของ Frontend Developer ผมจึงจะพูดถึงเทคนิคการ Optimize Objective time เป็นหลัก เนื่องจากวัดผลได้ง่ายกว่า
+บทความนี้ จะเป็นมุมมองของ Frontend Developer ผมจึงจะพูดถึงเทคนิคการ Optimize objective time ครับ เนื่องจากวัดผลได้ง่ายกว่า
 
 เครื่องมือวัดผลแบบฟรี ที่แนะนำก็จะมี
 
 - <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" class="bio-link -fancy" rel="noopener">Lighthouse</a>
 - <a href="https://gtmetrix.com" target="_blank" class="bio-link -fancy" rel="noopener">GTMetrix</a>
 
-ผมค่อนข้างชอบ GTMetrix มากกว่า เนื่องจากคเจาะลึกในรายละเอียดมากกว่าครับ
+ผมค่อนข้างชอบ GTMetrix มากกว่า เนื่องจาก Report มีความเจาะลึกในรายละเอียดมากกว่า ทำให้เรา “เกาที่คัน” ได้ง่ายกว่าครับ
 
 เรามาดูกันว่า Frontend Developer ควรทำอะไรบ้างเพื่อให้เว็บเราเร็วขึ้นครับ
 
 ### 1.) Minify HTML, CSS, JS
 
-การ Minify ทำได้ง่ายและควรทำ เรียกได้ว่าถ้าไม่นี่พลาดมาก โดยเป้าหมายของการ Minify ก็คือการลดขนาด Resource ลง ส่งผลให้โหลด Resource นั้นเร็วขึ้น
+การ Minify ทำได้ง่ายและควรทำเป็นอันดับต้น ๆ เรียกได้ว่าถ้าไม่นี่พลาดเลย โดยเป้าหมายของการ Minify คือการลดขนาด Resource ลง ส่งผลให้โหลด Resource เร็วขึ้น
 
-กระบวนการ Minify จะทำการตัด Characters ที่ไม่จำเป็นออก เช่น Space หรือ Newline และถ้าตรวจสอบดูแล้วว่าปลอดภัย Minifier ก็จะทำการเปลี่ยนชื่อตัวแปลให้สั้นลงด้วย โดยที่ทุกอย่าง ยังทำงานเหมือนเดิม
+กระบวนการ Minify จะทำการตัด Characters ที่ไม่จำเป็นออก เช่น Space หรือ Newline และถ้าตรวจสอบดูแล้วว่าปลอดภัย Minifier ก็จะทำการเปลี่ยนชื่อตัวแปลให้สั้นลงด้วย โดยที่ทุกอย่าง ยังคงทำงานเหมือนเดิม
 
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
-		<!-- <source srcset="minify@2x.webp 2x, minify.webp 1x" type="image/webp"> -->
-		<!-- <source srcset="minify@2x.png 2x, minify.png 1x" type="image/png"> -->
+		<!-- <source srcset="minify@2x.webp 2x, minify.webp" type="image/webp"> -->
+		<source srcset="minify@2x.png 2x, minify.png" type="image/png">
 		<img
-			srcset="minify@2x.png 2x, minify.png 1x"
+			srcset="minify@2x.png 2x, minify.png "
 			src="minify.png"
 			alt="Minify image"
+			width="800"
 		>
 		<em>ตัวอย่าง javascript ก่อน Minify (ซ้าย), หลัง Minify (ขวา)</em>
 	</picture>
 </p>
 
-การ Minify สามารถทำได้ง่าย โดยใช้ Plugin ของ Task runner, Bundler เช่น <a href="https://webpack.js.org/" target="_blank" class="bio-link -fancy" rel="noopener">Webpack</a>, <a href="https://gulpjs.com/" target="_blank" class="bio-link -fancy" rel="noopener">Gulp</a>, <a href="https://gruntjs.com/" target="_blank" class="bio-link -fancy" rel="noopener">Grunt</a> หรือ <a href="http://browserify.org/" target="_blank" class="bio-link -fancy" rel="noopener">Browserify</a> โดยกรณีของผม คือทำการ Optimize Blog นี้ ผมจึงเลือกใช้ Gulp เพราะใช้งานง่าย และตรงความต้องการที่สุดครับ
+การ Minify สามารถทำได้ง่าย โดยใช้ Plugin ของ Task runner หรือ Bundler เช่น <a href="https://webpack.js.org/" target="_blank" class="bio-link -fancy" rel="noopener">Webpack</a>, <a href="https://gulpjs.com/" target="_blank" class="bio-link -fancy" rel="noopener">Gulp</a>, <a href="https://gruntjs.com/" target="_blank" class="bio-link -fancy" rel="noopener">Grunt</a> หรือ <a href="http://browserify.org/" target="_blank" class="bio-link -fancy" rel="noopener">Browserify</a> โดยกรณีของผม คือทำการ Optimize Blog นี้ ผมจึงเลือกใช้ Gulp เพราะใช้งานง่าย สะดวกในการ Deploy และตรงความต้องการที่สุดครับ
 
 Plugin ที่แนะนำคือ
 
 - <a href="https://github.com/hustxiaoc/gulp-minify" target="_blank" class="bio-link -fancy" rel="noopener">gulp-minify</a>
-- <a href="https://github.com/terinjokes/gulp-uglify" target="_blank" class="bio-link -fancy" rel="noopener">gulp-uglify</a>
+- <a href="https://github.com/terinjokes/gulp-uglify" target="_blank" class="bio-link -fancy" rel="noopener">gulp-uglify</a> ⭐️
 
 ## 2.) Optimize image
 
-เป้าหมายของการ Optimize image คือทำรูปให้มีขนาดเล็กลง แต่คุณภาพของรูปเท่าเดิม หรือลดลงในระดับที่เหมาะสม สิ่งที่ Frontend Developer ควรคำนึงมีดังต่อไปนี้
+เป้าหมายของการ Optimize image คือทำรูปให้มีขนาดเล็กลง แต่คุณภาพของรูปเท่าเดิม หรือลดลงในระดับที่เหมาะสม
+
+สิ่งที่ Frontend Developer ควรคำนึงมีดังต่อไปนี้
 
 ### เลือก File type ให้เหมาะสมกับประเภทของภาพ
 
@@ -90,18 +93,19 @@ File type ทั่วไปที่ถูกใช้งานบ่อยค�
 
 ในรูปภาพ จะมีข้อมูล Metadata ที่ไม่จำเป็นต่อการแสดงผล เช่น EXIF, Color profile, GPS, Gramma ซึ่งส่วนใหญ่เราไม่มีความจำเป็นที่ต้องใช้ เว้นแต่ในบางกรณี เช่นเรื่องของ Copyright เป็นต้น
 
-สำหรับ MacOS เครื่องมือที่ผมใช้คือ <a href="https://imageoptim.com/mac" target="_blank" class="bio-link -fancy" rel="noopener">ImageOptim</a> ที่ใช้งานได้ง่ายแค่ Drag and Drop โปรแกรมก็จะทำการลดขนาดไฟล์ให้เราทันที โดยไม่ลดคุณภาพ แต่ก็สามารถตั้งค่าให้ลดคุณภาพ ให้ขนาดเล็กลงอีกได้
+สำหรับ MacOS เครื่องมือที่ผมใช้ในการลดขนาดภาพ คือ <a href="https://imageoptim.com/mac" target="_blank" class="bio-link -fancy" rel="noopener">ImageOptim</a> ที่ใช้งานได้ง่ายมาก แค่ Drag and Drop โปรแกรมก็จะทำการลดขนาดไฟล์ให้เราทันที โดยไม่ลดคุณภาพ แต่ก็สามารถตั้งค่าให้ลดคุณภาพลง เพื่อให้ขนาดเล็กลงอีกได้ครับ
 
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
-		<!-- <source srcset="imageOptim@2x.webp 2x, imageOptim.webp 1x" type="image/webp"> -->
-		<source srcset="imageOptim@2x.png 2x, imageOptim.png 1x" type="image/png">
+		<!-- <source srcset="imageOptim@2x.webp 2x, imageOptim.webp" type="image/webp"> -->
+		<source srcset="imageOptim@2x.png 2x, imageOptim.png" type="image/png">
 		<img
 			src="imageOptim.png"
 			alt="ImageOptim"
+			width="677"
 			class="_w-at _mxw-100pct"
 		>
-		<em>ตัวอย่างการลดขนาดรูปด้วย ImageIptim</em>
+		<em>ตัวอย่างการลดขนาดรูปด้วย ImageOptim</em>
 	</picture>
 </p>
 
@@ -117,11 +121,12 @@ File type ทั่วไปที่ถูกใช้งานบ่อยค�
 
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
-		<!-- <source srcset="srcset@2x.webp 2x, srcset.webp 1x" type="image/webp"> -->
-		<source srcset="srcset@2x.png 2x, srcset.png 1x" type="image/png">
+		<!-- <source srcset="srcset@2x.webp 2x, srcset.webp" type="image/webp"> -->
+		<source srcset="srcset@2x.png 2x, srcset.png" type="image/png">
 		<img
 			src="srcset.png"
 			alt="srcset"
+			width="592"
 			class="_w-at _mxw-100pct"
 		>
 		<em>การใช้งาน srcset เพื่อโหลด ภาพ photo@2x.png เมื่อ device pixels มีขนาดเป็น 2 เท่าของ CSS pixels</em>
@@ -144,11 +149,12 @@ HTML นี้จะเป็นการบอก Browser ว่า
 
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
-		<!-- <source srcset="divitis@2x.webp 2x, divitis.webp 1x" type="image/webp"> -->
-		<source srcset="divitis@2x.png 2x, divitis.png 1x" type="image/png">
+		<!-- <source srcset="divitis@2x.webp 2x, divitis.webp" type="image/webp"> -->
+		<source srcset="divitis@2x.png 2x, divitis.png" type="image/png">
 		<img
 			src="divitis.png"
 			alt="divitis"
+			width="616"
 			class="_w-at _mxw-100pct"
 		>
 		<em>การที่มี div มากเกินความจำเป็น (Divitis)</em>
@@ -163,11 +169,12 @@ HTML นี้จะเป็นการบอก Browser ว่า
 
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
-		<!-- <source srcset="bootstrap@2x.webp 2x, bootstrap.webp 1x" type="image/webp"> -->
-		<source srcset="bootstrap@2x.png 2x, bootstrap.png 1x" type="image/png">
+		<!-- <source srcset="bootstrap@2x.webp 2x, bootstrap.webp" type="image/webp"> -->
+		<source srcset="bootstrap@2x.png 2x, bootstrap.png" type="image/png">
 		<img
 			src="bootstrap.png"
 			alt="bootstrap"
+			width="800"
 			class="_w-at _mxw-100pct"
 		>
 		<em>snippet code ของ bootstrap (นี่ขนาดยังไม่ได้ใส่ Responsive container เข้าไปนะนี่)</em>
@@ -186,11 +193,12 @@ CSSOM จะถูกนำมารวมกับ DOM เพื่อใช้
 
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
-		<!-- <source srcset="render-tree@2x.webp 2x, render-tree.webp 1x" type="image/webp"> -->
-		<source srcset="render-tree@2x.png 2x, render-tree.png 1x" type="image/png">
+		<!-- <source srcset="render-tree@2x.webp 2x, render-tree.webp" type="image/webp"> -->
+		<source srcset="render-tree@2x.png 2x, render-tree.png" type="image/png">
 		<img
 			src="render-tree.png"
 			alt="render-tree"
+			width="800"
 			class="_w-at _mxw-100pct"
 		>
 		<em>DOM, CSSOM และ Render Tree</em>
@@ -215,8 +223,8 @@ Resource Hints ใช้เพื่อบอกใบ้ ให้ Browser ใ�
 
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
-		<!-- <source srcset="preload@2x.webp 2x, preload.webp 1x" type="image/webp"> -->
-		<source srcset="preload@2x.png 2x, preload.png 1x" type="image/png">
+		<!-- <source srcset="preload@2x.webp 2x, preload.webp" type="image/webp"> -->
+		<source srcset="preload@2x.png 2x, preload.png" type="image/png">
 		<img
 			src="preload.png"
 			alt="preload"
@@ -230,11 +238,12 @@ Resource Hints ใช้เพื่อบอกใบ้ ให้ Browser ใ�
 
 <p class="_tal-ct">
 	<picture class="_mgt-32px">
-		<!-- <source srcset="dns-prefetch@2x.webp 2x, dns-prefetch.webp 1x" type="image/webp"> -->
-		<source srcset="dns-prefetch@2x.png 2x, dns-prefetch.png 1x" type="image/png">
+		<!-- <source srcset="dns-prefetch@2x.webp 2x, dns-prefetch.webp" type="image/webp"> -->
+		<source srcset="dns-prefetch@2x.png 2x, dns-prefetch.png" type="image/png">
 		<img
 			src="dns-prefetch.png"
 			alt="dns-prefetch"
+			width="700"
 			class="_w-at _mxw-100pct"
 		>
 		<em>การบอกให้ Browser ทำการ DNS lookup domain cdnjs.cloudflare.com ล่วงหน้า</em>
