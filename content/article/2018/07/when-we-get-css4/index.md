@@ -2,14 +2,14 @@
 title: "CSS4 มีฟีเจอร์อะไรบ้าง และอีกนานเท่าไร เราถึงจะได้ใช้งาน ?"
 pageTitle: "CSS4 มีฟีเจอร์อะไรบ้าง และอีกนานเท่าไร เราถึงจะได้ใช้งาน ?"
 
-description: "---"
+description: "ตลอดช่วงเวลาที่ผ่านมาของโลก Frontend Development การมาถึงของ CSS ในเวอร์ชั่นที่สาม หรือ CSS3 ก็ทำให้พวกเราตื่นเต้นกันสุด ๆ มีหนังสือ, มีคอร์ส CSS3 มากมาย มองไปทางไหน ๆ ก็เต็มไปด้วย CSS3..."
 
 thumbnailImageName: "thumbnail"
 coverImageName: "cover"
 
-publishDate: "2018-07-25"
+publishDate: "2018-07-28"
 
-slug: "css4-and-where-to-find-them"
+slug: "css4-and-css-level"
 
 # Taxonomies
 categories: ["CSS"]
