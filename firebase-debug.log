@@ -1,0 +1,35 @@
+[debug] [2018-07-29T05:52:40.788Z] ----------------------------------------------------------------------
+[debug] [2018-07-29T05:52:40.793Z] Command:       /Users/speedstars/.nvm/versions/node/v7.9.0/bin/node /Users/speedstars/.nvm/versions/node/v7.9.0/bin/firebase deploy
+[debug] [2018-07-29T05:52:40.794Z] CLI Version:   3.17.6
+[debug] [2018-07-29T05:52:40.794Z] Platform:      darwin
+[debug] [2018-07-29T05:52:40.795Z] Node Version:  v7.9.0
+[debug] [2018-07-29T05:52:40.796Z] Time:          Sun Jul 29 2018 12:52:40 GMT+0700 (+07)
+[debug] [2018-07-29T05:52:40.796Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-29T05:52:40.830Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-29T05:52:40.831Z] > authorizing via signed-in user
+[debug] [2018-07-29T05:52:40.835Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-29T05:52:40.836Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/XULED7HompCe11DLs9059f8MgTuCgJ-insKh2Gf3Ios',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jul 29 2018 12:52:40 GMT+0700 (+07)
+[debug] [2018-07-29T05:52:41.311Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-29T05:52:41.334Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/chanto-web  
+  
+ Sun Jul 29 2018 12:52:41 GMT+0700 (+07)
+[debug] [2018-07-29T05:52:42.785Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-29T05:52:42.786Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/chanto-web/tokens  
+  
+ Sun Jul 29 2018 12:52:42 GMT+0700 (+07)
+[debug] [2018-07-29T05:52:44.014Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'chanto-web'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-07-29T05:52:46.691Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/chanto-web/uploads/-LIZaILx2-QV1MaS0ZyS?fileCount=151&message=  
+  
+ Sun Jul 29 2018 12:52:46 GMT+0700 (+07)

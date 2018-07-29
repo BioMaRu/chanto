@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chanto.io/2018/07/css4-and-css-level/</loc>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chanto.io/2018/07/how-to-optimize-your-website/</loc>
     <lastmod>2018-07-22T00:00:00+00:00</lastmod>
   </url>
@@ -25,13 +30,13 @@
   
   <url>
     <loc>https://chanto.io/c/css/</loc>
-    <lastmod>2018-07-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chanto.io/t/css/</loc>
-    <lastmod>2018-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -67,7 +72,7 @@
   
   <url>
     <loc>https://chanto.io/article/</loc>
-    <lastmod>2018-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -78,7 +83,7 @@
   
   <url>
     <loc>https://chanto.io/</loc>
-    <lastmod>2018-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

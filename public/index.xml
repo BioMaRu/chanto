@@ -6,10 +6,25 @@
     <description>Recent content in chanto.io on chanto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chanto.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS4 มีฟีเจอร์อะไรบ้าง และอีกนานแค่ไหน เราถึงจะได้ใช้งาน ?</title>
+      <link>https://chanto.io/2018/07/css4-and-css-level/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chanto.io/2018/07/css4-and-css-level/</guid>
+      <description>ตลอดช่วงเวลาที่ผ่านมาของโลก Frontend การมาถึงของ CSS ในเวอร์ชั่นที่สาม หรือ CSS3 ก็ทำให้พวกเราได้ตื่นเต้นกันสุด ๆ ด้วย Features ใหม่ ๆ ที่เพิ่มเข้ามาอย่างมากมาย มีหนังสือ, คอร์สเรียน และ Meetup เกี่ยวกับ CSS3 ผุดขึ้นเป็นดอกเห็ด มองไปทางไหน ๆ ก็เต็มไปด้วย CSS3
+&amp;hellip;Mastering CSS3&amp;hellip;
+&amp;hellip;CSS3 for DUMMIES&amp;hellip;
+&amp;hellip;หลักสูตร Advance HTML5, CSS3&amp;hellip;
+ตัวอย่างหนังสือ ที่มีเนื้อหาเกี่ยวกับ CSS3  CSS3 ได้กลายเป็นหนึ่งในสุดยอด Buzzword มาอย่างยาวนาน พูดได้ว่าใครเรียก CSS ว่า CSS เฉย ๆ นี่เชยตายเลยครับ
+ตั้งแต่ CSS3 ได้ปรากฏตัวให้พวกเราได้ใช้งานในช่วงแรก ๆ ประมาณปี 2011 ก็ได้มีการพัฒนาความสามารถต่าง ๆ เพิ่มขึ้นมาอย่างต่อเนื่อง โดย Feature ล่าสุด ที่คนต่างพูดถึงคือ สิ่งมาที่เปลี่ยนโลกการทำ Layout อย่าง Grid Layout
+เวลาก็ผ่านมาหลายปีแล้ว แต่ก็ยังไร้วี่แววของ Buzzword อย่าง&amp;hellip; “CSS4”</description>
+    </item>
     
     <item>
       <title>5 เทคนิคการ Optimize เว็บ ให้เร็วขึ้นราวติดจรวด!!</title>
