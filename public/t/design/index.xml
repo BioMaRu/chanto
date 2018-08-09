@@ -6,10 +6,24 @@
     <description>Recent content in Design on chanto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chanto.io/t/design/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UI Stack – เรื่องสำคัญที่ Designer ควรรู้ และคำนึงถึง ในการออกแบบ</title>
+      <link>https://chanto.io/2018/08/ui-stack-the-states-of-screen/</link>
+      <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chanto.io/2018/08/ui-stack-the-states-of-screen/</guid>
+      <description>ในการสร้าง Website หรือ Application ขึ้นมาซักอันหนึ่ง, งาน Design เป็นสิ่งที่มีสำคัญมาก ๆ เนื่องจาก ความรู้ ความเข้าใจ และการจินตนาการ ของผู้ที่เกี่ยวข้องแต่ละคน ไม่ว่าจะเป็น CEO, Product Manager หรือ Developer นั้น มีไม่เท่ากัน
+งาน Design จึงเป็นสิ่งที่ช่วยการันตีว่า ทุกคนที่เกี่ยวข้องใน เห็นภาพเดียวกันอยู่ และนั่นก็เป็นหน้าที่ของพวกเรา Designer ครับ
+ถ้า Design ออกมาไม่มีความชัดเจนพอ ก็จะทำให้เกิดความเข้าใจไม่ตรงกัน แม้ในรายละเอียดที่เล็กน้อย ก็อาจนำมาซึ่งการแก้ไข จนกระทบ Quality โดยรวมได้
+ “Design is Communication”
+ การออกแบบ UI ที่ดีนั้น มีเรื่องที่ต้องคำนึงถึง อยู่หลายอย่าง ไม่ใช่เพียงแต่ออกแบบให้สวยเพียงงามอย่างเดียว ซึ่งหนึ่งในเรื่องที่สำคัญอันดับต้น ๆ ที่เราจะมาพูดถึงในวันนี้คือ UI Stack ครับ
+UI Stack โดยทั่วไป Designer อย่างเรา ๆ มักจะออกแบบ UI ของแต่ละหน้า มาในลักษณะที่เป็น Ideal หรือแบบที่ดูสวยที่สุด มีข้อมูลเต็ม ปุ่มมาครบ ซึ่งพอเอาวางมาเป็น Screenflow ก็ดูสวยเป๊ะสุด ๆ แล้วก็มักจะจบแค่นั้น</description>
+    </item>
     
     <item>
       <title>5 เทคนิคการ Optimize เว็บ ให้เร็วขึ้นราวติดจรวด!!</title>
