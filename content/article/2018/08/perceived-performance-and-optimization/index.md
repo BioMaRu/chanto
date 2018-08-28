@@ -9,7 +9,7 @@ coverImageName: "cover"
 
 publishDate: "2018-08-22"
 
-slug: "perceived-performance-and-optimization-magic"
+slug: "perceived-performance-and-optimization"
 
 # Taxonomies
 categories: ["DESIGN"]
