@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://chanto.io/2018/08/perceived-performance-and-optimization/</loc>
-    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -39,26 +39,26 @@
   </url>
   
   <url>
-    <loc>https://chanto.io/t/css/</loc>
-    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://chanto.io/c/css/</loc>
     <lastmod>2018-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chanto.io/t/design/</loc>
-    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+    <loc>https://chanto.io/t/css/</loc>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chanto.io/c/design/</loc>
-    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chanto.io/t/design/</loc>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -69,13 +69,13 @@
   </url>
   
   <url>
-    <loc>https://chanto.io/t/frontend/</loc>
+    <loc>https://chanto.io/c/frontend/</loc>
     <lastmod>2018-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chanto.io/c/frontend/</loc>
+    <loc>https://chanto.io/t/frontend/</loc>
     <lastmod>2018-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -88,7 +88,7 @@
   
   <url>
     <loc>https://chanto.io/article/</loc>
-    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -99,25 +99,25 @@
   
   <url>
     <loc>https://chanto.io/t/ui/</loc>
-    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chanto.io/t/ux/</loc>
-    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chanto.io/t/web/</loc>
-    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chanto.io/</loc>
-    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-27T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

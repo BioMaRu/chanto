@@ -7,7 +7,7 @@ description: "ถ้าจะพูดถึงเหตุผลอันดั
 thumbnailImageName: "thumbnail"
 coverImageName: "cover"
 
-publishDate: "2018-08-22"
+publishDate: "2018-08-27"
 
 slug: "perceived-performance-and-optimization"
 
