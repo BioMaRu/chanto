@@ -6,10 +6,23 @@
     <description>Recent content in Design on chanto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chanto.io/c/design/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Perceived Performance และการทำให้เว็บเร็วขึ้นแบบเหนือจริง</title>
+      <link>https://chanto.io/2018/08/perceived-performance-and-optimization/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chanto.io/2018/08/perceived-performance-and-optimization/</guid>
+      <description>ถ้าจะพูดถึงเหตุผลอันดับต้น ๆ ในการใช้งาน Website ที่ทำให้ User อารมณ์เสีย คงหนีไม่พ้นเรื่องเว็บช้า ไม่ว่าจะเป็น โหลดช้า ประมวลผลช้า ถ้า User “รู้สึก” ว่ามันช้าเกินไปแล้วละก็ แย่แน่ ๆ ครับ
+เราจึงต้องหาสารพัดวิธี ที่จะ Optimize Performance ของเว็บเราให้ดีขึ้น โดยในบทความก่อนหน้านี้ ผมก็ได้พูดถึงการ Optimize Performance เบื้องต้น สำหรับ Frontend Developer กันไปแล้ว
+แต่การ Optimize Performance ไม่ใช่เรื่อง Engineer เสมอไป แต่เป็นสิ่งที่ Designer ก็สามารถช่วยคิด และช่วยทำได้เช่นกัน เผลอ ๆ อาจจะ คุ้มค่า และทรงพลัง กว่าการแก้ไขทาง Engineer อีกด้วย
+Perceived Performance Steve Seow จาก Microsoft ค้นพบว่า การที่ User จะเริ่มรู้สึกถึงความแตกต่างใน Performance นั้น เราจะต้องทำให้ เว็บเราเร็วขึ้นกว่าเดิม 20% (แค่เริ่มรับรู้ถึงความแตกต่างนะครับ)
+หมายความว่า ถ้าเราจะทำให้ความเปลี่ยนแปลงนั้น เกิด Impact จริง ๆ อาจจะต้องทำให้เว็บเร็วขึ้น ถึงประมาณ 30% เลยทีเดียว OMG!</description>
+    </item>
     
     <item>
       <title>UI Stack – เรื่องสำคัญที่ Designer ควรรู้ และคำนึงถึง ในการออกแบบ</title>
